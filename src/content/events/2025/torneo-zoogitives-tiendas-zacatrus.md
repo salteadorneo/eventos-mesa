@@ -3,8 +3,6 @@ title: 'Torneo Zoogitives en Tiendas Zacatrus'
 description: 'Torneo gratuito de Zoogitives en todas las tiendas Zacatrus con presentación especial en Barcelona.'
 start: '2025-03-15'
 end: '2025-03-15'
-location: 'Todas las tiendas Zacatrus'
-province: 'Nacional'
 color: '#FF9800'
 ---
 

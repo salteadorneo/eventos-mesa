@@ -2,8 +2,6 @@
 title: 'Presentación-Torneo Diluvio - Tiendas Zacatrus'
 description: 'Torneo de presentación del juego Diluvio en todas las tiendas Zacatrus, con presencia del autor en Madrid Pirámides.'
 start: '2025-02-15'
-location: 'Múltiples ciudades'
-province: 'Varias'
 color: '#FF9800'
 url: 'https://zacatrus.es'
 ---

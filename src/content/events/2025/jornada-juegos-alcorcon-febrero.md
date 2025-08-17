@@ -3,8 +3,6 @@ title: 'Eventos de juegos de mesa en febrero de 2025'
 description: 'Eventos y torneos de juegos de mesa programados para febrero de 2025 en España y Francia.'
 start: '2025-02-01'
 end: '2025-02-28'
-location: 'Varios'
-province: 'Varios'
 color: '#3498db'
 ---
 
