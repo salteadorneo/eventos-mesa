@@ -18,17 +18,17 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
     <main>
         <article>
             <div
-                class="relative flex items-end py-6 min-h-96 bg-center bg-cover bg-no-repeat"
+                class="relative flex items-end py-6 min-h-[40dvh] bg-center bg-cover bg-no-repeat"
                 style={`background-image: url(${image})`}
             >
                 <div
-                    class={`absolute inset-0 ${image && "opacity-40"}`}
+                    class={`absolute inset-0 ${image && "bg-black! opacity-30"}`}
                     style={`background-color: ${color};`}
                 >
                 </div>
                 <div class="container mx-auto px-4">
                     <div
-                        class="text-xl text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] opacity-60"
+                        class="text-xl text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
                     >
                         <FormattedDate date={start} />
                         {
@@ -48,7 +48,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         }
                     </div>
                     <h1
-                        class="text-6xl text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
+                        class="text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
                     >
                         {title}
                     </h1>
@@ -73,3 +73,10 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
     </main>
     <Footer />
 </Layout>
+
+<style is:inline define:vars={{ color }}>
+    a {
+        color: var(--color, --color-primary)
+        text-decoration: underline;
+    }
+</style>
