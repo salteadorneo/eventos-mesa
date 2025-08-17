@@ -8,56 +8,67 @@ import Layout from "./Layout.astro";
 
 type Props = CollectionEntry<"event">["data"];
 
-const { title, start, end, updatedDate, image, location } = Astro.props;
+const { title, start, end, updatedDate, image, location, color } = Astro.props;
 
 const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
 ---
 
 <Layout>
     <Header />
-    <main class="container mx-auto px-4">
+    <main>
         <article>
-            <div class="hero-image">
-                {
-                    image && (
-                        <Image width={1020} height={510} src={image} alt="" />
-                    )
-                }
-            </div>
-            <div class="space-y-4">
-                <div class="opacity-70">
-                    <FormattedDate date={start} />
-                    {
-                        end && (
-                            <>
-                                al <FormattedDate date={end} />
-                            </>
-                        )
-                    }
-                    {
-                        updatedDate && (
-                            <div class="last-updated-on">
-                                Last updated on{" "}
-                                <FormattedDate date={updatedDate} />
-                            </div>
-                        )
-                    }
+            <div
+                class="relative flex items-end py-6 min-h-96 bg-center bg-cover bg-no-repeat"
+                style={`background-image: url(${image})`}
+            >
+                <div
+                    class={`absolute inset-0 ${image && "opacity-40"}`}
+                    style={`background-color: ${color};`}
+                >
                 </div>
-                <h1 class="text-2xl font-semibold">{title}</h1>
-                <slot />
-                {
-                    location && (
-                        <iframe
-                            width="100%"
-                            height="300"
-                            loading="lazy"
-                            allowfullscreen
-                            referrerpolicy="no-referrer-when-downgrade"
-                            src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${encodeURIComponent(location)}`}
-                        />
-                    )
-                }
+                <div class="container mx-auto px-4">
+                    <div
+                        class="text-xl text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] opacity-60"
+                    >
+                        <FormattedDate date={start} />
+                        {
+                            end && (
+                                <>
+                                    al <FormattedDate date={end} />
+                                </>
+                            )
+                        }
+                        {
+                            updatedDate && (
+                                <div class="last-updated-on">
+                                    Last updated on{" "}
+                                    <FormattedDate date={updatedDate} />
+                                </div>
+                            )
+                        }
+                    </div>
+                    <h1
+                        class="text-6xl text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
+                    >
+                        {title}
+                    </h1>
+                </div>
             </div>
+            <div class="container mx-auto py-8 px-4 space-y-4">
+                <slot />
+            </div>
+            {
+                location && (
+                    <iframe
+                        width="100%"
+                        class="h-96"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${encodeURIComponent(location)}`}
+                    />
+                )
+            }
         </article>
     </main>
     <Footer />
