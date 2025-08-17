@@ -1,0 +1,124 @@
+---
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { slugify } from "../../utils";
+
+export async function getStaticPaths() {
+    const events = await getCollection("event");
+    const provinces = new Set<string>();
+    events.forEach((event: CollectionEntry<"event">) => {
+        if (event.data.province) {
+            provinces.add(slugify(event.data.province));
+        }
+    });
+    return Array.from(provinces).map((province) => ({
+        params: { province },
+        props: { province },
+    }));
+}
+
+const events = await getCollection("event", ({ data }) =>
+    Astro.params.province.match(slugify(data.province || "")),
+);
+---
+
+<Layout>
+    <Header />
+    <main class="container mx-auto px-4">
+        <div id="calendar" class="h-[150dvh] md:h-[90dvh]"></div>
+        <style is:inline>
+            .event:hover {
+                opacity: 0.8;
+            }
+
+            .fc-toolbar {
+                @media (width < 768px) {
+                    flex-direction: column;
+                }
+            }
+        </style>
+        <script src="/lib/fullcalendar.min.js" is:inline></script>
+        <script is:inline define:vars={{ events }}>
+            document.addEventListener("DOMContentLoaded", function () {
+                // guardar en localstorage el mes y año que se está mostrando
+                const savedDate = localStorage.getItem("calendarDate");
+                let initialDate = savedDate ? new Date(savedDate) : new Date();
+
+                var calendarEl = document.getElementById("calendar");
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    firstDay: 1,
+                    locale: "es",
+                    showNonCurrentDates: false,
+                    initialDate,
+                    headerToolbar: {
+                        left: "prev,next today",
+                        center: "title",
+                        right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+                    },
+                    events: events.map((event) => {
+                        const data = {
+                            id: event.id,
+                            title: event.data.title,
+                            url: `/evento/${event.id}`,
+                            image: event.data.image,
+                            color: event.data.color,
+                        };
+
+                        // Check if it's a recurring event
+                        if (
+                            event.data.daysOfWeek &&
+                            event.data.daysOfWeek.length > 0
+                        ) {
+                            // Recurring event
+                            data.daysOfWeek = event.data.daysOfWeek;
+                            data.startTime = event.data.startTime || "00:00";
+                            data.endTime = event.data.endTime || "23:59";
+                            data.startRecur = event.data.startRecur;
+                            // For recurring events, endRecur should also be adjusted if it's all-day
+                            if (event.data.endRecur && !event.data.startTime) {
+                                const endRecurDate = new Date(
+                                    event.data.endRecur,
+                                );
+                                // endRecur is already exclusive, so we don't need to add a day
+                                data.endRecur = event.data.endRecur;
+                            } else {
+                                data.endRecur = event.data.endRecur;
+                            }
+                            data.allDay = !event.data.startTime; // If no startTime, it's all day
+                            data.classNames = ["event recurring-event"]; // Different style for recurring events
+                        } else {
+                            // Regular event
+                            data.start = event.data.start;
+                            // For all-day events, end date should be the day after the last day
+                            if (event.data.end) {
+                                const endDate = new Date(event.data.end);
+                                endDate.setDate(endDate.getDate() + 1);
+                                data.end = endDate.toISOString().split("T")[0];
+                            }
+                            data.allDay = true;
+                            data.classNames = ["event"]; // Normal event style
+                        }
+
+                        return data;
+                    }),
+                });
+                calendar.render();
+
+                document
+                    .querySelectorAll(".fc-button-primary")
+                    .forEach((button) => {
+                        button.addEventListener("click", function () {
+                            const currentDate = calendar.getDate();
+                            localStorage.setItem(
+                                "calendarDate",
+                                currentDate.toISOString(),
+                            );
+                        });
+                    });
+            });
+        </script>
+    </main>
+    <Footer />
+</Layout>

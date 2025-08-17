@@ -1,1 +1,26 @@
-<footer></footer>
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import { slugify } from "../utils";
+
+const events = await getCollection("event");
+const provinces = new Set<string>();
+events.forEach((event: CollectionEntry<"event">) => {
+    if (event.data.province) {
+        provinces.add(event.data.province);
+    }
+});
+---
+
+<footer>
+    Eventos por ciudad
+    <ul class="grid grid-cols-4">
+        {
+            Array.from(provinces).map((province) => (
+                <li>
+                    <a href={`/eventos/${slugify(province)}`}>{province}</a>
+                </li>
+            ))
+        }
+    </ul>
+</footer>
