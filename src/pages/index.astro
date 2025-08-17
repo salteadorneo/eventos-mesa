@@ -1,11 +1,133 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const posts = await getCollection("blog");
 ---
 
 <Layout>
-	<Welcome />
+	<Header />
+	<main class="container mx-auto px-4">
+		<div id="calendar"></div>
+		<div>
+			<p>Leyenda</p>
+			<div>
+				<div class="flex items-center gap-2">
+					<div class="size-4 rounded event-normal"></div>
+					<span>Eventos específicos</span>
+				</div>
+				<div class="flex items-center gap-2">
+					<div class="size-4 rounded event-recurring"></div>
+					<span>Eventos recurrentes</span>
+				</div>
+			</div>
+		</div>
+		<style is:inline>
+			.event {
+				background-color: #3788d8;
+				border-color: #3788d8;
+
+				&:hover {
+					opacity: 0.8;
+					cursor: pointer;
+				}
+			}
+
+			.recurring-event {
+				background-color: #e67e22;
+				border-color: #d35400;
+			}
+
+			.event-normal {
+				background-color: #3788d8;
+				border: 1px solid #3788d8;
+			}
+
+			.event-recurring {
+				background-color: #e67e22;
+				border: 1px dashed #d35400;
+			}
+		</style>
+		<script src="/lib/fullcalendar.min.js" is:inline></script>
+		<script is:inline define:vars={{ posts }}>
+			document.addEventListener("DOMContentLoaded", function () {
+				// guardar en localstorage el mes y año que se está mostrando
+				const savedDate = localStorage.getItem("calendarDate");
+				let initialDate = savedDate ? new Date(savedDate) : new Date();
+
+				var calendarEl = document.getElementById("calendar");
+				var calendar = new FullCalendar.Calendar(calendarEl, {
+					firstDay: 1,
+					locale: "es",
+					initialDate,
+					headerToolbar: {
+						left: "prev,next today",
+						center: "title",
+						right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+					},
+					events: posts.map((post) => {
+						const event = {
+							id: post.id,
+							title: post.data.title,
+							url: `/blog/${post.id}`,
+							image: post.data.heroImage,
+						};
+
+						// Check if it's a recurring event
+						if (
+							post.data.daysOfWeek &&
+							post.data.daysOfWeek.length > 0
+						) {
+							// Recurring event
+							event.daysOfWeek = post.data.daysOfWeek;
+							event.startTime = post.data.startTime || "00:00";
+							event.endTime = post.data.endTime || "23:59";
+							event.startRecur = post.data.startRecur;
+							// For recurring events, endRecur should also be adjusted if it's all-day
+							if (post.data.endRecur && !post.data.startTime) {
+								const endRecurDate = new Date(
+									post.data.endRecur,
+								);
+								// endRecur is already exclusive, so we don't need to add a day
+								event.endRecur = post.data.endRecur;
+							} else {
+								event.endRecur = post.data.endRecur;
+							}
+							event.allDay = !post.data.startTime; // If no startTime, it's all day
+							event.classNames = ["event recurring-event"]; // Different style for recurring events
+						} else {
+							// Regular event
+							event.start = post.data.start;
+							// For all-day events, end date should be the day after the last day
+							if (post.data.end) {
+								const endDate = new Date(post.data.end);
+								endDate.setDate(endDate.getDate() + 1);
+								event.end = endDate.toISOString().split("T")[0];
+							}
+							event.allDay = true;
+							event.classNames = ["event"]; // Normal event style
+						}
+
+						return event;
+					}),
+				});
+				calendar.render();
+
+				document
+					.querySelectorAll(".fc-button-primary")
+					.forEach((button) => {
+						button.addEventListener("click", function () {
+							const currentDate = calendar.getDate();
+							localStorage.setItem(
+								"calendarDate",
+								currentDate.toISOString(),
+							);
+						});
+					});
+			});
+		</script>
+	</main>
+	<Footer />
 </Layout>
