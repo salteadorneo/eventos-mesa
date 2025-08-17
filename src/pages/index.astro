@@ -11,43 +11,9 @@ const posts = await getCollection("blog");
 	<Header />
 	<main class="container mx-auto px-4">
 		<div id="calendar"></div>
-		<div>
-			<p>Leyenda</p>
-			<div>
-				<div class="flex items-center gap-2">
-					<div class="size-4 rounded event-normal"></div>
-					<span>Eventos específicos</span>
-				</div>
-				<div class="flex items-center gap-2">
-					<div class="size-4 rounded event-recurring"></div>
-					<span>Eventos recurrentes</span>
-				</div>
-			</div>
-		</div>
 		<style is:inline>
-			.event {
-				background-color: #3788d8;
-				border-color: #3788d8;
-
-				&:hover {
-					opacity: 0.8;
-					cursor: pointer;
-				}
-			}
-
-			.recurring-event {
-				background-color: #e67e22;
-				border-color: #d35400;
-			}
-
-			.event-normal {
-				background-color: #3788d8;
-				border: 1px solid #3788d8;
-			}
-
-			.event-recurring {
-				background-color: #e67e22;
-				border: 1px dashed #d35400;
+			.event:hover {
+				opacity: 0.8;
 			}
 		</style>
 		<script src="/lib/fullcalendar.min.js" is:inline></script>
@@ -73,7 +39,7 @@ const posts = await getCollection("blog");
 							title: post.data.title,
 							url: `/blog/${post.id}`,
 							image: post.data.image,
-							color: post.data.color || "#3788d8",
+							color: post.data.color,
 						};
 
 						// Check if it's a recurring event
