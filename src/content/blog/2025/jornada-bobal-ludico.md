@@ -3,6 +3,8 @@ title: 'III Jornada Bobal Lúdico'
 description: 'Disfruta de una jornada de puertas abiertas con juegos de mesa y ocio para toda la familia.'
 start: '2025-04-05'
 location: 'Valencia'
+province: 'Valencia'
+color: '#FF9800'
 # heroImage: ''
 ---
 

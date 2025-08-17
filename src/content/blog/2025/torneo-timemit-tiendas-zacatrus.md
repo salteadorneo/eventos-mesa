@@ -3,6 +3,9 @@ title: 'Presentación-Torneo Timemit en Tiendas Zacatrus'
 description: 'Torneo nacional de Timemit en todas las tiendas Zacatrus con premios y obsequios para participantes.'
 start: '2025-06-13'
 location: 'Múltiples ciudades'
+province: 'Varias'
+color: '#795548'
+url: 'https://zacatrus.es'
 # heroImage: ''
 ---
 

@@ -4,6 +4,9 @@ description: 'XIV edición de las Jornadas Queremos Jugar con más de 3.000 m² 
 start: '2025-05-17'
 end: '2025-05-18'
 location: 'Sevilla'
+province: 'Sevilla'
+color: '#FF5722'
+url: 'https://jqj.es'
 # heroImage: ''
 ---
 

@@ -4,6 +4,8 @@ description: 'Jornadas Jesta 2025 en Quart de Poblet, Valencia, reuniendo a aman
 start: '2025-06-07'
 end: '2025-06-08'
 location: 'Quart de Poblet, Valencia'
+province: 'Valencia'
+color: '#4CAF50'
 # heroImage: ''
 ---
 

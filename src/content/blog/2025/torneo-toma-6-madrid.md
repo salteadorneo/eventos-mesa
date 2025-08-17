@@ -3,6 +3,9 @@ title: 'Torneo Oficial de Toma 6 - Clasificatorio Nacional'
 description: 'Torneo Oficial Clasificatorio para el Nacional de Toma 6 en la tienda Zacatrus Madrid Pirámides.'
 start: '2025-09-13'
 location: 'Madrid'
+province: 'Madrid'
+color: '#FF5722'
+url: 'https://zacatrus.es'
 # heroImage: ''
 ---
 

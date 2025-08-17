@@ -3,6 +3,8 @@ title: 'Asturmeeple - Torneo de Diluvio'
 description: 'Torneo de Diluvio en Gijón donde cada carta cuenta y solo un capitán podrá vencer al diluvio.'
 start: '2025-07-06'
 location: 'Gijón, Asturias'
+province: 'Asturias'
+color: '#009688'
 # heroImage: ''
 ---
 

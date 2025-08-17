@@ -12,8 +12,11 @@ const blog = defineCollection({
             start: z.coerce.date(),
             end: z.coerce.date().optional(),
             updatedDate: z.coerce.date().optional(),
-            heroImage: image().optional(),
+            image: image().optional(),
             location: z.string().optional(),
+            province: z.string().optional(),
+            color: z.string().optional(),
+            url: z.string().url().optional(),
             // Recurring event properties
             daysOfWeek: z.array(z.number()).optional(),
             startTime: z.string().optional(),

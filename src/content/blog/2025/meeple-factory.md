@@ -4,6 +4,9 @@ description: 'Gran festival de Granada que da a conocer la importancia de los ju
 start: '2025-04-26'
 end: '2025-04-27'
 location: 'Granada'
+province: 'Granada'
+color: '#8BC34A'
+url: 'https://www.meeplefactory.es/'
 # heroImage: ''
 ---
 

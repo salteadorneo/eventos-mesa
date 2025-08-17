@@ -4,6 +4,9 @@ description: 'XIV edición de las jornadas Umbras organizadas por la Asociación
 start: '2025-08-14'
 end: '2025-08-17'
 location: 'Huarte, Navarra'
+province: 'Navarra'
+color: '#673AB7'
+url: 'https://alterparadox.com'
 # heroImage: ''
 ---
 

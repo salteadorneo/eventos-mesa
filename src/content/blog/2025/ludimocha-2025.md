@@ -4,6 +4,8 @@ description: 'Tercera edición oficial de la feria de juegos de mesa organizada 
 start: '2025-05-31'
 end: '2025-06-01'
 location: 'Torremocha de Jarama, Madrid'
+province: 'Madrid'
+color: '#3F51B5'
 # heroImage: ''
 ---
 

@@ -1,5 +1,12 @@
 ---
-title: 'CuBoS 25 - 3ª Jornada de Juegos de Mesa'
+title: 'CuBoS \'25 - 3ª Jornada de Juegos de Mesa'
+description: 'Tercera jornada de Juegos de Mesa CuBoS para todos los públicos en Cubas de la Sagra.'
+start: '2025-06-07'
+location: 'Cubas de la Sagra, Madrid'
+province: 'Madrid'
+color: '#607D8B'
+# heroImage: ''
+---tle: 'CuBoS 25 - 3ª Jornada de Juegos de Mesa'
 description: 'Tercera jornada de Juegos de Mesa CuBoS para todos los públicos en Cubas de la Sagra.'
 start: '2025-06-07'
 location: 'Cubas de la Sagra, Madrid'

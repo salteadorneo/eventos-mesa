@@ -4,6 +4,8 @@ description: 'Festival de Cultura Asiática y Videojuegos de Sevilla con gran lu
 start: '2025-04-05'
 end: '2025-04-06'
 location: 'Sevilla'
+province: 'Sevilla'
+color: '#F44336'
 # heroImage: ''
 ---
 

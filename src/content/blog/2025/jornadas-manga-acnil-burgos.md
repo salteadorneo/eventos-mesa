@@ -4,6 +4,8 @@ description: 'XII edici√≥n de las jornadas organizadas por ACNIL con destacada √
 start: '2025-07-13'
 end: '2025-07-14'
 location: 'Burgos'
+province: 'Burgos'
+color: '#FFC107'
 # heroImage: ''
 ---
 

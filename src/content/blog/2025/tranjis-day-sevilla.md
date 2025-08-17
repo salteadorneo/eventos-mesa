@@ -3,6 +3,9 @@ title: 'Tranjis Day'
 description: 'Evento en Zacatrus Sevilla para conocer las novedades de Tranjis con múltiples juegos disponibles.'
 start: '2025-05-15'
 location: 'Sevilla'
+province: 'Sevilla'
+color: '#FF5722'
+url: 'https://zacatrus.es'
 # heroImage: ''
 ---
 

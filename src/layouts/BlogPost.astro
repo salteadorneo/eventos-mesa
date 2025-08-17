@@ -8,7 +8,7 @@ import Layout from "./Layout.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, start, end, updatedDate, heroImage } = Astro.props;
+const { title, start, end, updatedDate, image } = Astro.props;
 ---
 
 <Layout>
@@ -17,13 +17,8 @@ const { title, start, end, updatedDate, heroImage } = Astro.props;
         <article>
             <div class="hero-image">
                 {
-                    heroImage && (
-                        <Image
-                            width={1020}
-                            height={510}
-                            src={heroImage}
-                            alt=""
-                        />
+                    image && (
+                        <Image width={1020} height={510} src={image} alt="" />
                     )
                 }
             </div>

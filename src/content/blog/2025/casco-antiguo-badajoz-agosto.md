@@ -8,6 +8,8 @@ endTime: '22:00'
 startRecur: '2025-08-01'
 endRecur: '2025-09-01'
 location: 'Badajoz'
+province: 'Badajoz'
+color: '#E91E63'
 # heroImage: ''
 ---
 

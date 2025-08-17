@@ -72,7 +72,8 @@ const posts = await getCollection("blog");
 							id: post.id,
 							title: post.data.title,
 							url: `/blog/${post.id}`,
-							image: post.data.heroImage,
+							image: post.data.image,
+							color: post.data.color || "#3788d8",
 						};
 
 						// Check if it's a recurring event

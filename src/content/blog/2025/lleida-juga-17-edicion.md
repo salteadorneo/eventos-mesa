@@ -3,6 +3,8 @@ title: 'Lleida Juga - 17ª Edición'
 description: '17ª edición de Lleida Juga, la gran fiesta del juego coincidiendo con el Día Internacional del Juego.'
 start: '2025-05-30'
 location: 'Lleida'
+province: 'Lleida'
+color: '#FF9800'
 # heroImage: ''
 ---
 

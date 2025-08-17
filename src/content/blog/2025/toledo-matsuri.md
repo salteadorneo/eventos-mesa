@@ -4,6 +4,9 @@ description: 'Primer evento a gran escala que une manga, anime, videojuegos, jue
 start: '2025-04-05'
 end: '2025-04-06'
 location: 'Toledo'
+province: 'Toledo'
+color: '#E91E63'
+url: 'https://toledomatsuri.com/'
 # heroImage: ''
 ---
 

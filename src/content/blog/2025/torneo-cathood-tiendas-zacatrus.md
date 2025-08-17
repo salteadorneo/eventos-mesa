@@ -4,6 +4,9 @@ description: 'Presentación y torneo del nuevo juego Cathood en tiendas Zacatrus
 start: '2025-07-18'
 end: '2025-07-19'
 location: 'Múltiples ciudades'
+province: 'Varias'
+color: '#FF9800'
+url: 'https://zacatrus.es'
 # heroImage: ''
 ---
 

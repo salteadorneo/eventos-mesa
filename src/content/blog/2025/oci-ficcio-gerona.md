@@ -3,6 +3,8 @@ title: 'Oci Ficció 2025 - 8ª Jornadas Lúdicas'
 description: 'La Asociación Lúdica Oci Ficció Empordà celebra sus 8ª Jornadas Lúdicas, su evento anual más importante.'
 start: '2025-08-16'
 location: 'Gerona'
+province: 'Gerona'
+color: '#4CAF50'
 # heroImage: ''
 ---
 

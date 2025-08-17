@@ -4,6 +4,8 @@ description: 'Décima edición de las Jornadas de Juegos de Mesa y Cartas Megagu
 start: '2025-07-11'
 end: '2025-07-12'
 location: 'Plasencia, Cáceres'
+province: 'Cáceres'
+color: '#673AB7'
 # heroImage: ''
 ---
 

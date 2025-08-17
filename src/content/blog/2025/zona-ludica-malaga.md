@@ -4,6 +4,8 @@ description: 'Encuentro de Juegos de Mesa de 4 días con torneos, partidas, conc
 start: '2025-05-01'
 end: '2025-05-04'
 location: 'Mollina, Málaga'
+province: 'Málaga'
+color: '#3F51B5'
 # heroImage: ''
 ---
 

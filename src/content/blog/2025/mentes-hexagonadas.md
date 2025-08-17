@@ -4,6 +4,9 @@ description: 'XIV Encuentro de Juegos de Mesa de Huelva en su edición número 1
 start: '2025-04-05'
 end: '2025-04-06'
 location: 'Huelva'
+province: 'Huelva'
+color: '#FF6B35'
+url: 'https://menteshexagonadas.com/'
 # heroImage: ''
 ---
 

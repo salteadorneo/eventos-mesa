@@ -3,6 +3,9 @@ title: 'LudiJocs - Fiesta del Juego / Ludinit'
 description: 'Evento familiar con la Fiesta del Juego y la II Ludinit para sesiones más competitivas en Barcelona.'
 start: '2025-05-31'
 location: 'Barcelona'
+province: 'Barcelona'
+color: '#9C27B0'
+url: 'https://ludijocs.cat'
 # heroImage: ''
 ---
 

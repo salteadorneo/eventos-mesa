@@ -4,6 +4,9 @@ description: 'Presentación y torneo de Zenith en múltiples tiendas Zacatrus co
 start: '2025-07-04'
 end: '2025-07-05'
 location: 'Múltiples ciudades'
+province: 'Varias'
+color: '#607D8B'
+url: 'https://zacatrus.es'
 # heroImage: ''
 ---
 

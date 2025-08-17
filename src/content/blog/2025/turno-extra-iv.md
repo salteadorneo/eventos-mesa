@@ -3,6 +3,9 @@ title: 'Turno Extra IV'
 description: 'Encuentro dedicado a los juegos de cartas coleccionables, miniaturas, juegos de mesa y rol en Cádiz.'
 start: '2025-04-26'
 location: 'Cádiz'
+province: 'Cádiz'
+color: '#00BCD4'
+url: 'https://linktr.ee/pactodelloto'
 # heroImage: ''
 ---
 

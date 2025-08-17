@@ -4,6 +4,9 @@ description: '11ª edición del Festival Ludivers en els Jardins de la Devesa de
 start: '2025-05-02'
 end: '2025-05-04'
 location: 'Girona'
+province: 'Gerona'
+color: '#4CAF50'
+url: 'https://ludivers.cat'
 # heroImage: ''
 ---
 

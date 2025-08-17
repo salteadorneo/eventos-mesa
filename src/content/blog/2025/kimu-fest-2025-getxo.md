@@ -4,6 +4,8 @@ description: 'Jornadas gratuitas de juegos de mesa y rol organizadas por la Asoc
 start: '2025-06-27'
 end: '2025-06-29'
 location: 'Getxo, Bizkaia'
+province: 'Bizkaia'
+color: '#795548'
 # heroImage: ''
 ---
 

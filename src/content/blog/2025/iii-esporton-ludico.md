@@ -4,6 +4,9 @@ description: 'Jornadas organizadas por la Asociación Cultural CSI Badajoz en Al
 start: '2025-04-05'
 end: '2025-04-06'
 location: 'Badajoz'
+province: 'Badajoz'
+color: '#9C27B0'
+url: 'https://esportonludico.com/iiiel.html'
 # heroImage: ''
 ---
 

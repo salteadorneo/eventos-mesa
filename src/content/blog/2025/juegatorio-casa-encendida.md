@@ -8,6 +8,8 @@ endTime: '20:00'
 startRecur: '2025-07-01'
 endRecur: '2025-08-03'
 location: 'Madrid'
+province: 'Madrid'
+color: '#FF5722'
 # heroImage: ''
 ---
 

@@ -3,6 +3,9 @@ title: 'LudiJocs - Encuentro Gente Mayor'
 description: 'Jornada dedicada a personas mayores para fomentar el envejecimiento activo a través del juego.'
 start: '2025-05-17'
 location: 'Barcelona'
+province: 'Barcelona'
+color: '#9C27B0'
+url: 'https://ludijocs.cat'
 # heroImage: ''
 ---
 

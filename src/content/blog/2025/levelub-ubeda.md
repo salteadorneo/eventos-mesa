@@ -4,6 +4,8 @@ description: '9ª edición de las Jornadas LevelUB en el edificio renacentista d
 start: '2025-07-12'
 end: '2025-07-13'
 location: 'Úbeda, Jaén'
+province: 'Jaén'
+color: '#CDDC39'
 # heroImage: ''
 ---
 

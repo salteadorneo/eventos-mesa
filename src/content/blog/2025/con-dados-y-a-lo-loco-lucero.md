@@ -3,6 +3,8 @@ title: 'Con Dados y a lo Loco - Jornada en Lucero'
 description: 'Cuarta edición de la jornada de juegos de mesa en el barrio Lucero de Madrid, un evento familiar consolidado.'
 start: '2025-09-13'
 location: 'Madrid'
+province: 'Madrid'
+color: '#2196F3'
 # heroImage: ''
 ---
 
