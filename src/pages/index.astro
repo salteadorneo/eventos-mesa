@@ -10,10 +10,16 @@ const posts = await getCollection("blog");
 <Layout>
 	<Header />
 	<main class="container mx-auto px-4">
-		<div id="calendar"></div>
+		<div id="calendar" class="h-[150dvh] md:h-[90dvh]"></div>
 		<style is:inline>
 			.event:hover {
 				opacity: 0.8;
+			}
+
+			.fc-toolbar {
+				@media (width < 768px) {
+					flex-direction: column;
+				}
 			}
 		</style>
 		<script src="/lib/fullcalendar.min.js" is:inline></script>
