@@ -1,11 +1,11 @@
 ---
 import { getCollection } from "astro:content";
-import Footer from "../../components/Footer.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
-import Header from "../../components/Header.astro";
-import Layout from "../../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
 
-const posts = (await getCollection("blog")).sort(
+const events = (await getCollection("event")).sort(
     (a, b) => b.data.start.valueOf() - a.data.start.valueOf(),
 );
 ---
@@ -16,56 +16,64 @@ const posts = (await getCollection("blog")).sort(
         <section>
             <ul>
                 {
-                    posts.map((post) => (
+                    events.map((event) => (
                         <li>
-                            <a href={`/blog/${post.id}/`}>
-                                {/* {post.data.image && (
+                            <a href={`/evento/${event.id}/`}>
+                                {/* {event.data.image && (
                                         <Image
                                             width={720}
                                             height={360}
-                                            src={post.data.image}
+                                            src={event.data.image}
                                             alt=""
                                         />
                                     )} */}
-                                <h4 class="title">{post.data.title}</h4>
+                                <h4 class="title">{event.data.title}</h4>
                                 <p class="date">
-                                    {post.data.daysOfWeek ? (
+                                    {event.data.daysOfWeek ? (
                                         <>
-                                            {post.data.daysOfWeek.includes(0) &&
-                                                "Dom "}
-                                            {post.data.daysOfWeek.includes(1) &&
-                                                "Lun "}
-                                            {post.data.daysOfWeek.includes(2) &&
-                                                "Mar "}
-                                            {post.data.daysOfWeek.includes(3) &&
-                                                "Mié "}
-                                            {post.data.daysOfWeek.includes(4) &&
-                                                "Jue "}
-                                            {post.data.daysOfWeek.includes(5) &&
-                                                "Vie "}
-                                            {post.data.daysOfWeek.includes(6) &&
-                                                "Sáb "}
-                                            {post.data.startTime &&
-                                                ` - ${post.data.startTime}`}
-                                            {post.data.endTime &&
-                                                ` a ${post.data.endTime}`}
-                                            {post.data.startRecur && (
+                                            {event.data.daysOfWeek.includes(
+                                                0,
+                                            ) && "Dom "}
+                                            {event.data.daysOfWeek.includes(
+                                                1,
+                                            ) && "Lun "}
+                                            {event.data.daysOfWeek.includes(
+                                                2,
+                                            ) && "Mar "}
+                                            {event.data.daysOfWeek.includes(
+                                                3,
+                                            ) && "Mié "}
+                                            {event.data.daysOfWeek.includes(
+                                                4,
+                                            ) && "Jue "}
+                                            {event.data.daysOfWeek.includes(
+                                                5,
+                                            ) && "Vie "}
+                                            {event.data.daysOfWeek.includes(
+                                                6,
+                                            ) && "Sáb "}
+                                            {event.data.startTime &&
+                                                ` - ${event.data.startTime}`}
+                                            {event.data.endTime &&
+                                                ` a ${event.data.endTime}`}
+                                            {event.data.startRecur && (
                                                 <>
                                                     <br />
                                                     <small>
                                                         Desde{" "}
                                                         <FormattedDate
                                                             date={
-                                                                post.data
+                                                                event.data
                                                                     .startRecur
                                                             }
                                                         />
-                                                        {post.data.endRecur && (
+                                                        {event.data
+                                                            .endRecur && (
                                                             <>
                                                                 {" hasta "}
                                                                 <FormattedDate
                                                                     date={
-                                                                        post
+                                                                        event
                                                                             .data
                                                                             .endRecur
                                                                     }
@@ -79,13 +87,13 @@ const posts = (await getCollection("blog")).sort(
                                     ) : (
                                         <>
                                             <FormattedDate
-                                                date={post.data.start}
+                                                date={event.data.start}
                                             />
-                                            {post.data.end && (
+                                            {event.data.end && (
                                                 <>
                                                     al{" "}
                                                     <FormattedDate
-                                                        date={post.data.end}
+                                                        date={event.data.end}
                                                     />
                                                 </>
                                             )}

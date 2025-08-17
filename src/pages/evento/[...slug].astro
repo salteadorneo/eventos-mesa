@@ -1,0 +1,20 @@
+---
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import Event from "../../layouts/Event.astro";
+
+export async function getStaticPaths() {
+    const events = await getCollection("event");
+    return events.map((event) => ({
+        params: { slug: event.id },
+        props: event,
+    }));
+}
+type Props = CollectionEntry<"event">;
+
+const event = Astro.props;
+const { Content } = await render(event);
+---
+
+<Event {...event.data}>
+    <Content />
+</Event>

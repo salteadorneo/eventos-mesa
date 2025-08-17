@@ -4,7 +4,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 
-const posts = await getCollection("blog");
+const events = await getCollection("event");
 ---
 
 <Layout>
@@ -23,7 +23,7 @@ const posts = await getCollection("blog");
 			}
 		</style>
 		<script src="/lib/fullcalendar.min.js" is:inline></script>
-		<script is:inline define:vars={{ posts }}>
+		<script is:inline define:vars={{ events }}>
 			document.addEventListener("DOMContentLoaded", function () {
 				// guardar en localstorage el mes y año que se está mostrando
 				const savedDate = localStorage.getItem("calendarDate");
@@ -40,51 +40,51 @@ const posts = await getCollection("blog");
 						center: "title",
 						right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
 					},
-					events: posts.map((post) => {
-						const event = {
-							id: post.id,
-							title: post.data.title,
-							url: `/blog/${post.id}`,
-							image: post.data.image,
-							color: post.data.color,
+					events: events.map((event) => {
+						const data = {
+							id: event.id,
+							title: event.data.title,
+							url: `/evento/${event.id}`,
+							image: event.data.image,
+							color: event.data.color,
 						};
 
 						// Check if it's a recurring event
 						if (
-							post.data.daysOfWeek &&
-							post.data.daysOfWeek.length > 0
+							event.data.daysOfWeek &&
+							event.data.daysOfWeek.length > 0
 						) {
 							// Recurring event
-							event.daysOfWeek = post.data.daysOfWeek;
-							event.startTime = post.data.startTime || "00:00";
-							event.endTime = post.data.endTime || "23:59";
-							event.startRecur = post.data.startRecur;
+							data.daysOfWeek = event.data.daysOfWeek;
+							data.startTime = event.data.startTime || "00:00";
+							data.endTime = event.data.endTime || "23:59";
+							data.startRecur = event.data.startRecur;
 							// For recurring events, endRecur should also be adjusted if it's all-day
-							if (post.data.endRecur && !post.data.startTime) {
+							if (event.data.endRecur && !event.data.startTime) {
 								const endRecurDate = new Date(
-									post.data.endRecur,
+									event.data.endRecur,
 								);
 								// endRecur is already exclusive, so we don't need to add a day
-								event.endRecur = post.data.endRecur;
+								data.endRecur = event.data.endRecur;
 							} else {
-								event.endRecur = post.data.endRecur;
+								data.endRecur = event.data.endRecur;
 							}
-							event.allDay = !post.data.startTime; // If no startTime, it's all day
-							event.classNames = ["event recurring-event"]; // Different style for recurring events
+							data.allDay = !event.data.startTime; // If no startTime, it's all day
+							data.classNames = ["event recurring-event"]; // Different style for recurring events
 						} else {
 							// Regular event
-							event.start = post.data.start;
+							data.start = event.data.start;
 							// For all-day events, end date should be the day after the last day
-							if (post.data.end) {
-								const endDate = new Date(post.data.end);
+							if (event.data.end) {
+								const endDate = new Date(event.data.end);
 								endDate.setDate(endDate.getDate() + 1);
-								event.end = endDate.toISOString().split("T")[0];
+								data.end = endDate.toISOString().split("T")[0];
 							}
-							event.allDay = true;
-							event.classNames = ["event"]; // Normal event style
+							data.allDay = true;
+							data.classNames = ["event"]; // Normal event style
 						}
 
-						return event;
+						return data;
 					}),
 				});
 				calendar.render();
