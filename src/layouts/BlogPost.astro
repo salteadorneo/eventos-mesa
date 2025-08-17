@@ -8,7 +8,9 @@ import Layout from "./Layout.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, start, end, updatedDate, image } = Astro.props;
+const { title, start, end, updatedDate, image, location } = Astro.props;
+
+const API_KEY = "AIzaSyCX_6U-Sgiyb44SMjxxHabG6uvINdb-qvc";
 ---
 
 <Layout>
@@ -43,6 +45,18 @@ const { title, start, end, updatedDate, image } = Astro.props;
                 </div>
                 <h1 class="text-2xl font-semibold">{title}</h1>
                 <slot />
+                {
+                    location && (
+                        <iframe
+                            width="100%"
+                            height="300"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src={`https://www.google.com/maps/embed/v1/place?key=${API_KEY}&q=${encodeURIComponent(location)}`}
+                        />
+                    )
+                }
             </div>
         </article>
     </main>
