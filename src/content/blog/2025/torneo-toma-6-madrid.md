@@ -6,7 +6,6 @@ location: 'Madrid'
 province: 'Madrid'
 color: '#FF5722'
 url: 'https://zacatrus.es'
-# heroImage: ''
 ---
 
 El Torneo Oficial Clasificatorio para el Nacional será en la tienda Zacatrus de Madrid Pirámides el 13 de septiembre a las 11:00 horas.

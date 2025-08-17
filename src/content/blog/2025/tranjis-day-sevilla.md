@@ -6,7 +6,6 @@ location: 'Sevilla'
 province: 'Sevilla'
 color: '#FF5722'
 url: 'https://zacatrus.es'
-# heroImage: ''
 ---
 
 Ven a conocer las novedades de Tranjis en la tienda de Zacatrus Sevilla.

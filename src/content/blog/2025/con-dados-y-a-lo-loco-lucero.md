@@ -5,7 +5,6 @@ start: '2025-09-13'
 location: 'Madrid'
 province: 'Madrid'
 color: '#2196F3'
-# heroImage: ''
 ---
 
 Por cuarto año consecutivo, el barrio Lucero (Madrid) acoge la jornada de juegos de mesa "Con Dados y a lo Loco", una iniciativa que nació en el marco de las fiestas populares del barrio con la intención de acercar los juegos de mesa al vecindario.
@@ -16,11 +15,6 @@ Por cuarto año consecutivo, el barrio Lucero (Madrid) acoge la jornada de juego
 Pensado como una propuesta de ocio alternativo, este evento ofrece un espacio para compartir en familia y disfrutar del juego como herramienta de encuentro. Desde su primera edición en 2021, se ha convertido en una de las actividades más solicitadas por la Asociación Vecinal de Lucero, con una excelente acogida entre quienes se animan a pasar el día jugando.
 
 Una cita ya consolidada en las fiestas del barrio que cada año reúne a personas de todas las edades con ganas de descubrir, reír y jugar.
-
-**Juegos Zacatrus disponibles:**
-- Zoogitives
-- Diluvio
-- Timemit
 
 **Características del evento:**
 - Iniciativa comunitaria del barrio Lucero

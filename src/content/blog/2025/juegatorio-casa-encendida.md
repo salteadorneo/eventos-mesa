@@ -10,7 +10,6 @@ endRecur: '2025-08-03'
 location: 'Madrid'
 province: 'Madrid'
 color: '#FF5722'
-# heroImage: ''
 ---
 
 Juegatorio es un nuevo recurso para la ciudadanía, un espacio gratuito para todas las edades dedicado a los juegos de mesa. Desde el ajedrez, al Terraforming Mars, pasando por el mus, el parchís o el Catán.

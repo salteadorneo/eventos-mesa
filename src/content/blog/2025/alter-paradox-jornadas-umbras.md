@@ -3,11 +3,10 @@ title: 'Alter Paradox 2025 - XIV Edición Jornadas Umbras'
 description: 'XIV edición de las jornadas Umbras organizadas por la Asociación Alter Paradox en Navarra.'
 start: '2025-08-14'
 end: '2025-08-17'
-location: 'Huarte, Navarra'
+location: 'Polideportivo Ugarrandia de Huarte, Navarra'
 province: 'Navarra'
 color: '#673AB7'
 url: 'https://alterparadox.com'
-# heroImage: ''
 ---
 
 La Asociación Alter Paradox, una entidad sin ánimo de lucro dedicada a la promoción del ocio alternativo, celebra la XIV edición de nuestras jornadas Umbras, que tendrán lugar del jueves 14 al domingo 17 de agosto en el Polideportivo Ugarrandia de Huarte (Navarra).
@@ -27,12 +26,6 @@ La Asociación Alter Paradox, una entidad sin ánimo de lucro dedicada a la prom
 - Wargames
 - Torneos
 - Partidas con explicaciones para descubrir juegos nuevos
-
-**Juegos Zacatrus que podrás descubrir:**
-- Diluvio
-- Timemit
-- Zoogitives
-- Zenith
 
 **Inscripciones:**
 - Se puede realizar directamente en la recepción del evento

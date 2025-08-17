@@ -7,7 +7,6 @@ location: 'Toledo'
 province: 'Toledo'
 color: '#795548'
 url: 'https://toledum.com'
-# heroImage: ''
 ---
 
 El **Toledum** es el Festival de Juegos de Mesa de Toledo que se celebra del 13 al 15 de junio de 2025 en el **Palacio de Congresos 'El Greco'** de Toledo.

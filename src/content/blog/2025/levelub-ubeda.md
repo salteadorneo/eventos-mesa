@@ -6,7 +6,6 @@ end: '2025-07-13'
 location: 'Úbeda, Jaén'
 province: 'Jaén'
 color: '#CDDC39'
-# heroImage: ''
 ---
 
 Asiste los días 12 y 13 de julio a la 9º edición de las Jornadas LevelUB, las cuales cuentan cada año con miles de personas en el edificio renacentista del Hospital de Santiago, amantes de los juegos de mesa.

@@ -7,7 +7,6 @@ location: 'Valencia'
 province: 'Valencia'
 color: '#9C27B0'
 url: 'https://zacatrus.es'
-# heroImage: ''
 ---
 
 Campeonato de Lorcana "Reign of Jafar" en la tienda Zacatrus Valencia.

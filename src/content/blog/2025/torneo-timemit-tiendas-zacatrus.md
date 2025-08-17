@@ -6,7 +6,6 @@ location: 'Múltiples ciudades'
 province: 'Varias'
 color: '#795548'
 url: 'https://zacatrus.es'
-# heroImage: ''
 ---
 
 Apúntate al Torneo de Timemit en todas las tiendas Zacatrus. Un evento simultáneo en toda la red de tiendas para celebrar este popular juego.

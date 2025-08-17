@@ -10,7 +10,6 @@ endRecur: '2025-09-01'
 location: 'Badajoz'
 province: 'Badajoz'
 color: '#E91E63'
-# heroImage: ''
 ---
 
 Evento de juegos de mesa en el Casco Antiguo de Badajoz (Plaza Alta) organizado por "Entorno al fuego". El evento se realizará durante todos los sábados de agosto en horario de 17:00 a 22:00 horas y habrá 14 mesas con demostraciones de juegos.
@@ -23,11 +22,5 @@ Evento de juegos de mesa en el Casco Antiguo de Badajoz (Plaza Alta) organizado 
 **Características del evento:**
 - 14 mesas con demostraciones de juegos
 - Actividad semanal durante todo el mes
-
-**Juegos Zacatrus disponibles:**
-- Zenith
-- Diluvio
-- Boomie Busters
-- Arre Unicornio
 
 Un plan perfecto para disfrutar de los sábados de agosto en un entorno histórico único mientras descubres nuevos juegos de mesa.

@@ -7,7 +7,6 @@ location: 'Múltiples ciudades'
 province: 'Varias'
 color: '#FF9800'
 url: 'https://zacatrus.es'
-# heroImage: ''
 ---
 
 Apúntate a la presentación de Cathood, el 18 será el día en el que sale a la venta. No pasa nada si no sabes jugar, ¡allí te enseñamos! Tras la explicación, habrá un torneo en el que puedes ganar algunos premios y, además, habrá un obsequio solo por participar.

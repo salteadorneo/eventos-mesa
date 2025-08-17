@@ -7,7 +7,6 @@ location: 'Sevilla'
 province: 'Sevilla'
 color: '#FF5722'
 url: 'https://jqj.es'
-# heroImage: ''
 ---
 
 Llega la XIV de las Jornadas Queremos Jugar. Este año, más grandes que nunca, con más de 3.000 m² dedicados al juego y la diversión.

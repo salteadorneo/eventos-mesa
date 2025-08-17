@@ -6,7 +6,6 @@ end: '2025-07-12'
 location: 'Plasencia, Cáceres'
 province: 'Cáceres'
 color: '#673AB7'
-# heroImage: ''
 ---
 
 Apúntate a las Jornadas de Juegos de Mesa y Cartas Megagumi, que celebran su décima edición los días 11 y 12 de julio de 2025.

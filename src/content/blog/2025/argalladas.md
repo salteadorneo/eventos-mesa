@@ -6,7 +6,6 @@ end: '2025-09-07'
 location: 'Atios, Porriño, Galicia'
 province: 'Pontevedra'
 color: '#5FBF40'
-# heroImage: ''
 ---
 
 Los días 5, 6 y 7 de septiembre se celebrará en Atios, Porriño (Galicia) la primera edición de Argalladas, un evento centrado en los juegos de mesa y el ocio alternativo.

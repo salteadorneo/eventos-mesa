@@ -7,7 +7,6 @@ location: 'Múltiples ciudades'
 province: 'Varias'
 color: '#607D8B'
 url: 'https://zacatrus.es'
-# heroImage: ''
 ---
 
 Apúntate a la presentación de Zenith, un juego que está triunfando internacionalmente. No pasa nada si no sabes jugar, ¡allí te enseñamos! Tras la explicación, habrá un torneo en el que puedes ganar algunos premios y, además, habrá un obsequio solo por participar.
