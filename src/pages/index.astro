@@ -33,6 +33,7 @@ const posts = await getCollection("blog");
 				var calendar = new FullCalendar.Calendar(calendarEl, {
 					firstDay: 1,
 					locale: "es",
+					showNonCurrentDates: false,
 					initialDate,
 					headerToolbar: {
 						left: "prev,next today",
