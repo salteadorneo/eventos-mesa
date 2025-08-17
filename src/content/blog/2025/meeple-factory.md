@@ -1,0 +1,20 @@
+---
+title: 'Meeple Factory'
+description: 'Gran festival de Granada que da a conocer la importancia de los juegos de mesa en nuestra cultura.'
+start: '2025-04-26'
+end: '2025-04-27'
+location: 'Granada'
+# heroImage: ''
+---
+
+Descubre un año más este gran festival de Granada que da a conocer la importancia de los juegos de mesa en nuestra cultura tanto en el ocio como en uso docente. Acudirán un gran número de autores nacionales e invitados tanto nacionales como internacionales y contaremos con una zona donde mostraros todos nuestros últimos lanzamientos.
+
+**Fechas:** 26 y 27 de abril de 2025
+**Ubicación:** Pabellón 1 de la Feria de Muestras de Armilla, en Fermasa (Granada)
+
+**Características del evento:**
+- Presencia de autores nacionales e internacionales
+- Zona dedicada a los últimos lanzamientos
+- Enfoque tanto en ocio como en uso docente de juegos de mesa
+
+Más información en: [https://www.meeplefactory.es/](https://www.meeplefactory.es/)

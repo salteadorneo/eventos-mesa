@@ -1,0 +1,14 @@
+---
+title: 'Toledo Matsuri'
+description: 'Primer evento a gran escala que une manga, anime, videojuegos, juegos de mesa y ocio alternativo en Toledo.'
+start: '2025-04-05'
+end: '2025-04-06'
+location: 'Toledo'
+# heroImage: ''
+---
+
+Descubre el primer evento a gran escala que une manga, anime, videojuegos, juegos de mesa y ocio alternativo en la ciudad de Toledo. Un gran festival seguro, diverso e inclusivo que une la cultura japonesa con la suya propia. Ve a conocer los juegos Zacatrus que se demostrarán.
+
+**Fechas:** 5 y 6 de abril de 2025
+
+Hazte con tu entrada en: [https://toledomatsuri.com/](https://toledomatsuri.com/)
