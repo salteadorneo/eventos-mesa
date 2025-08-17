@@ -6,6 +6,7 @@ end: '2025-08-11'
 location: 'Mollina, Málaga'
 province: 'Málaga'
 color: '#111c12'
+image: 'https://jornadas-tdn.org/assets/images/hero/1400-and-more.jpg'
 ---
 
 Cientos de actividades de juegos de mesa y rol, rol en vivo y talleres en un evento que promete ser una experiencia inolvidable para todos los amantes del ocio alternativo.

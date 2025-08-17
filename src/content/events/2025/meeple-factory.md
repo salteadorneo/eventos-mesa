@@ -5,8 +5,9 @@ start: '2025-04-26'
 end: '2025-04-27'
 location: 'Granada'
 province: 'Granada'
-color: '#8BC34A'
+color: '#FF9800'
 url: 'https://www.meeplefactory.es/'
+image: 'https://www.meeplefactory.es/wp-content/uploads/sites/4/2025/01/Cartel-MeepleFactory-25_web-600x813.jpg'
 ---
 
 Descubre un año más este gran festival de Granada que da a conocer la importancia de los juegos de mesa en nuestra cultura tanto en el ocio como en uso docente. Acudirán un gran número de autores nacionales e invitados tanto nacionales como internacionales y contaremos con una zona donde mostraros todos nuestros últimos lanzamientos.
