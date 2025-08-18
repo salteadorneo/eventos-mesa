@@ -2,15 +2,16 @@
 const { events } = Astro.props;
 ---
 
-<div id="calendar" class="h-[150dvh] md:h-[90dvh]"></div>
+<div id="calendar" class="my-6 h-[150dvh] md:h-[90dvh]"></div>
 <style is:inline>
     .event:hover {
         opacity: 0.8;
     }
 
-    .fc-toolbar {
-        @media (width < 768px) {
-            flex-direction: column;
+    .fc .fc-toolbar-title {
+        @media (width < 480px) {
+            font-size: 1.2rem;
+            white-space: nowrap;
         }
     }
 </style>
@@ -27,11 +28,6 @@ const { events } = Astro.props;
             locale: "es",
             showNonCurrentDates: false,
             initialDate,
-            headerToolbar: {
-                left: "prev,next today",
-                center: "title",
-                right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
-            },
             events: events.map((event) => {
                 const data = {
                     id: event.id,
