@@ -9,7 +9,7 @@ import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 type Props = CollectionEntry<"event">["data"];
 
-const { title, start, end,startTime,endTime, updatedDate, image, location, color } = Astro.props;
+const { title, start, end,startTime,endTime, updatedDate, image, location, color,url } = Astro.props;
 
 const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
 ---
@@ -19,17 +19,17 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
     <main>
         <article>
             <div
-                class="relative flex items-end py-6 min-h-[300px] bg-primary bg-center bg-cover bg-no-repeat"
+                class="relative flex items-end py-6 min-h-96 bg-primary bg-center bg-cover bg-no-repeat"
                 style={`background-image: url(${image})`}
             >
                 <div
-                    class={`absolute inset-0 ${image && "bg-black! opacity-30"}`}
+                    class={`absolute inset-0 ${image && "bg-black! opacity-50"}`}
                     style={`background-color: ${color};`}
                 >
                 </div>
                 <div class="container mx-auto px-4">
                     <div
-                        class="text-xl text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
+                        class="text-xl text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
                     >
                         <FormattedDate date={start} />
                         {
@@ -49,13 +49,38 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         }
                     </div>
                     <h1
-                        class="text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
+                        class="text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
                     >
                         {title}
                     </h1>
                 </div>
             </div>
-            <div class="container mx-auto py-8 px-4 space-y-4">
+            <div
+                class="bg-primary text-white"
+                style={`background-color: ${color};`}
+            >
+                <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+                    <div class="flex items-center gap-4">
+                        {location && 
+                            <a href="#map" class="flex items-center gap-2 text-shadow-lg">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+                                {location}
+                            </a>
+                        }
+                        {url && 
+                            <a href={url} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-shadow-lg">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+                                {url}
+                            </a>
+                        }
+                    </div>
+                    <button class="flex items-center gap-2 text-shadow-lg" onclick={`navigator.share({ title: '${title}', url: window.location.href })`}>
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+                        Compartir
+                    </button>
+                </div>
+            </div>
+            <div class="container mx-auto py-6 px-4 space-y-4">
                 <slot />
             </div>
             <section class="flex flex-wrap items-center justify-center gap-2 mb-6">
@@ -83,6 +108,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
             {
                 location && (
                     <iframe
+                        id="map"
                         width="100%"
                         class="h-96"
                         loading="lazy"
