@@ -20,7 +20,7 @@ events.forEach((event: any) => {
             Array.from(months).map((month) => (
                 <li>
                     <h2 class="text-3xl mb-4">{month}</h2>
-                    <ul class="space-y-4 mb-4">
+                    <ul class="space-y-0.5 mb-4">
                         {events
                             .filter(
                                 (event: any) =>
@@ -33,19 +33,18 @@ events.forEach((event: any) => {
                             )
                             .map((event: any) => (
                                 <li
-                                    class="p-4 bg-primary"
-                                    style={`background-color: ${event.data.color};`}
+                                    class="relative p-4 bg-primary bg-center bg-cover bg-no-repeat clip-path-polygon"
+                                    style={`background-color: ${event.data.color}; background-image: url(${event.data.image})`}
                                 >
+                                    <div
+                                        class={`absolute inset-0 ${event.data.image && "bg-black! opacity-50"}`}
+                                        style={`background-color: ${event.data.color};`}
+                                    />
                                     <a href={`/evento/${event.id}/`}>
-                                        {/* {event.data.image && (
-                                            <Image
-                                                width={720}
-                                                height={360}
-                                                src={event.data.image}
-                                                alt=""
-                                            />
-                                        )} */}
-                                        <p class="text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                                        <p
+                                            class="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                                            transition:name={`date-${event.id}`}
+                                        >
                                             <FormattedDate
                                                 date={event.data.start}
                                             />
@@ -58,9 +57,42 @@ events.forEach((event: any) => {
                                                 </>
                                             )}
                                         </p>
-                                        <h4 class="text-2xl text-balance text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                                        <h4
+                                            class="text-2xl md:text-3xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                                            transition:name={`title-${event.id}`}
+                                        >
                                             {event.data.title}
                                         </h4>
+                                        {event.data.location && (
+                                            <p
+                                                class="flex items-center gap-2 mt-2 text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                                                transition:name={`location-${event.id}`}
+                                            >
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
+                                                >
+                                                    <path
+                                                        stroke="none"
+                                                        d="M0 0h24v24H0z"
+                                                        fill="none"
+                                                    />
+                                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                                </svg>
+                                                <span class="max-sm:hidden">
+                                                    {event.data.location}
+                                                </span>
+                                            </p>
+                                        )}
                                     </a>
                                 </li>
                             ))}
@@ -70,3 +102,9 @@ events.forEach((event: any) => {
         }
     </ul>
 </section>
+
+<style>
+    .clip-path-polygon {
+        clip-path: polygon(0 0, 100% 0, 99.5% 100%, 0.5% 100%);
+    }
+</style>
