@@ -2,42 +2,28 @@
 title: 'Presentación-Torneo Diluvio - Tiendas Zacatrus'
 description: 'Torneo de presentación del juego Diluvio en todas las tiendas Zacatrus, con presencia del autor en Madrid Pirámides.'
 start: '2025-02-15'
+end: '2025-02-15'
+location: 'Todas las tiendas Zacatrus'
 color: '#FF9800'
 url: 'https://zacatrus.es'
 ---
 
-## Presentación-Torneo Diluvio - Tiendas Zacatrus
+Apúntate al Torneo de Diluvio en cualquier tienda Zacatrus. Evento especial de presentación del juego con torneo incluido en todas las tiendas de la cadena.
 
-**Fecha:** 15 de febrero de 2025  
-**Horario:** 17:30 a 20:00  
-**Lugar:** Todas las tiendas Zacatrus  
+**Características del evento:**
+- Horario: 17:30 a 20:00
+- Entrada gratuita
+- Duración: 2 horas y 30 minutos
+- Disponible en todas las tiendas Zacatrus
 
-### Descripción
+**Evento especial en Madrid:**
+En Zacatrus Pirámides (Madrid) podrás conocer al autor del juego durante el evento.
 
-Apúntate al Torneo de Diluvio en Zacatrus. Evento especial de presentación del juego con torneo incluido en todas las tiendas de la cadena.
+**Premios:**
+- 1º lugar: Juego Diluvio
+- 2º lugar: Juego La Baraja
 
-### Información del evento
-
-- **Entrada:** Gratuita
-- **Inscripción:** En caja de la tienda o por teléfono
-- **Duración:** 2 horas y 30 minutos
-- **Tipo:** Presentación y torneo
-
-### Premios
-
-- **1º lugar:** Juego Diluvio
-- **2º lugar:** Juego La Baraja
-
-### Evento especial en Madrid
-
-En **Zacatrus Pirámides (Madrid)** podrás conocer al autor del juego durante el evento.
-
-### Inscripciones
-
-Inscríbete diciendo tu nombre en caja o llamando al teléfono de tu tienda Zacatrus. El torneo es completamente gratuito.
-
-### Información adicional
-
-- **Organizador:** Zacatrus
-- **Juego:** Diluvio
-- **Alcance:** Nacional (todas las tiendas)
+**Inscripciones:**
+- Diciendo tu nombre en caja de la tienda
+- Llamando al teléfono de tu tienda Zacatrus
+- Completamente gratuito

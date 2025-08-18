@@ -3,13 +3,15 @@ title: 'Torneo de Zenith en Tiendas Zacatrus'
 description: 'Presentación y torneo de Zenith en múltiples tiendas Zacatrus con premios y obsequios.'
 start: '2025-07-04'
 end: '2025-07-05'
+location: 'Múltiples tiendas Zacatrus'
+province: 'Nacional'
 color: '#607D8B'
 url: 'https://zacatrus.es'
 ---
 
 Apúntate a la presentación de Zenith, un juego que está triunfando internacionalmente. No pasa nada si no sabes jugar, ¡allí te enseñamos! Tras la explicación, habrá un torneo en el que puedes ganar algunos premios y, además, habrá un obsequio solo por participar.
 
-**Fechas y horarios:**
+**Fechas y tiendas participantes:**
 
 **Viernes 4 de julio a las 17:30 horas:**
 - Zacatrus Madrid Chamberí
@@ -23,8 +25,8 @@ Apúntate a la presentación de Zenith, un juego que está triunfando internacio
 - Zacatrus Madrid Pirámides
 
 **Premios:**
-- **Ganador:** Copia del juego + Tarjezaca de 10€
-- **Todos los participantes:** Obsequio de participación
+- Ganador: Copia del juego + Tarjezaca de 10€
+- Todos los participantes: Obsequio de participación
 
 **Inscripciones:**
 - Llamando a tu tienda más cercana

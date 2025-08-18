@@ -3,17 +3,13 @@ title: 'Lorcana Championship "Reign of Jafar"'
 description: 'Campeonato de Lorcana en la tienda Zacatrus Valencia con aforo limitado.'
 start: '2025-08-09'
 startTime: '16:30'
-location: 'Valencia'
+location: 'Tienda Zacatrus Valencia'
 province: 'Valencia'
 color: '#9C27B0'
 url: 'https://zacatrus.es'
 ---
 
 Campeonato de Lorcana "Reign of Jafar" en la tienda Zacatrus Valencia.
-
-**Fecha:** 9 de agosto de 2025
-**Hora:** 16:30 horas
-**Ubicación:** Tienda Zacatrus Valencia
 
 **Detalles del evento:**
 - Campeonato oficial de Lorcana

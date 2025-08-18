@@ -2,17 +2,14 @@
 title: 'Torneo Oficial de Toma 6 - Clasificatorio Nacional'
 description: 'Torneo Oficial Clasificatorio para el Nacional de Toma 6 en la tienda Zacatrus Madrid Pirámides.'
 start: '2025-09-13'
-location: 'Madrid'
+end: '2025-09-13'
+location: 'Tienda Zacatrus Madrid Pirámides'
 province: 'Madrid'
 color: '#FF5722'
 url: 'https://zacatrus.es'
 ---
 
-El Torneo Oficial Clasificatorio para el Nacional será en la tienda Zacatrus de Madrid Pirámides el 13 de septiembre a las 11:00 horas.
-
-**Fecha:** 13 de septiembre de 2025
-**Hora:** 11:00 horas
-**Ubicación:** Tienda Zacatrus Madrid Pirámides
+El Torneo Oficial Clasificatorio para el Nacional será en la tienda Zacatrus de Madrid Pirámides a las 11:00 horas.
 
 **Detalles del torneo:**
 - **Edad mínima:** Mayores de 18 años

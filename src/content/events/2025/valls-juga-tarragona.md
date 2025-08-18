@@ -8,10 +8,7 @@ province: 'Tarragona'
 color: '#FF5722'
 ---
 
-Después del éxito de la primera edición del Valls Juga - Festival del Joc del Camp de Tarragona, con más de 1600 participantes a lo largo de la jornada y las actividades previas durante la semana anterior, se va a celebrar la segunda edición del festival en Valls (Tarragona) el próximo 8 de marzo de 2025.
-
-**Fecha:** 8 de marzo de 2025
-**Ubicación:** Valls (Tarragona)
+Después del éxito de la primera edición del Valls Juga - Festival del Joc del Camp de Tarragona, con más de 1600 participantes a lo largo de la jornada y las actividades previas durante la semana anterior, se va a celebrar la segunda edición del festival.
 
 **Características del evento:**
 - Segunda edición tras el éxito de la primera

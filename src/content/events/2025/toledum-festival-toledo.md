@@ -3,7 +3,7 @@ title: 'Toledum - Festival de Juegos de Mesa de Toledo'
 description: 'Festival de juegos de mesa con acceso libre y gratuito en el Palacio de Congresos El Greco de Toledo del 13 al 15 de junio.'
 start: '2025-06-13'
 end: '2025-06-15'
-location: 'Toledo'
+location: 'Palacio de Congresos El Greco - Paseo del Miradero, s/n, 45003 Toledo'
 province: 'Toledo'
 color: '#D41568'
 url: 'https://toledum.com'
@@ -14,8 +14,6 @@ El **Toledum** es el Festival de Juegos de Mesa de Toledo que se celebra del 13 
 
 ## Información del evento
 
-- **Fechas**: 13, 14 y 15 de junio de 2025
-- **Lugar**: Palacio de Congresos 'El Greco' - Paseo del Miradero, s/n, 45003 Toledo
 - **Entrada**: Libre y gratuita
 - **Tipo**: Festival de juegos de mesa
 

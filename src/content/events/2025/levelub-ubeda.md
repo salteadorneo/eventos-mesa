@@ -3,16 +3,12 @@ title: 'LevelUB - 9ª Edición de las Jornadas'
 description: '9ª edición de las Jornadas LevelUB en el edificio renacentista del Hospital de Santiago en Úbeda.'
 start: '2025-07-12'
 end: '2025-07-13'
-location: 'Úbeda, Jaén'
+location: 'Hospital de Santiago, Úbeda, Jaén'
 province: 'Jaén'
 color: '#CDDC39'
 ---
 
 Asiste los días 12 y 13 de julio a la 9º edición de las Jornadas LevelUB, las cuales cuentan cada año con miles de personas en el edificio renacentista del Hospital de Santiago, amantes de los juegos de mesa.
-
-**Fechas:** 12 y 13 de julio de 2025
-
-**Ubicación:** Hospital de Santiago, Úbeda (Patrimonio de la Humanidad)
 
 **Colaboración:** Ayuntamiento de Úbeda
 

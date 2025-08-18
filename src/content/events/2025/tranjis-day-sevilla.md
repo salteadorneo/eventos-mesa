@@ -2,19 +2,14 @@
 title: 'Tranjis Day'
 description: 'Evento en Zacatrus Sevilla para conocer las novedades de Tranjis con múltiples juegos disponibles.'
 start: '2025-05-15'
-location: 'Sevilla'
+end: '2025-05-15'
+location: 'Zacatrus Sevilla - C/ Luis Montoto, 121'
 province: 'Sevilla'
 color: '#FF5722'
 url: 'https://zacatrus.es'
 ---
 
 Ven a conocer las novedades de Tranjis en la tienda de Zacatrus Sevilla.
-
-**Fecha:** 15 de mayo de 2025 (viernes)
-**Horario:** 17:00 a 20:00 horas
-**Ubicación:** Zacatrus Sevilla - C/ Luis Montoto, 121
-**Entrada:** Gratuita y sin inscripción previa
-**Público:** Para todas las edades
 
 **Novedades de Tranjis que podrás conocer:**
 - Tower up
@@ -26,8 +21,9 @@ Ven a conocer las novedades de Tranjis en la tienda de Zacatrus Sevilla.
 
 **Características del evento:**
 - Evento gratuito
+- Horario: 17:00 a 20:00 horas
 - Sin necesidad de inscripción previa
-- Ven directamente a la tienda
+- Para todas las edades
 - Ambiente familiar
 - Perfecta oportunidad para descubrir las últimas novedades
 
