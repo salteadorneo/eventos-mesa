@@ -1,0 +1,72 @@
+---
+import FormattedDate from "../components/FormattedDate.astro";
+
+const { events } = Astro.props;
+
+const months = new Set<string>();
+events.forEach((event: any) => {
+    const start = event.data.start;
+    const month = start.toLocaleString("es-ES", {
+        month: "long",
+        year: "numeric",
+    });
+    months.add(month);
+});
+---
+
+<section>
+    <ul>
+        {
+            Array.from(months).map((month) => (
+                <li>
+                    <h2 class="text-3xl mb-4">{month}</h2>
+                    <ul class="space-y-4 mb-4">
+                        {events
+                            .filter(
+                                (event: any) =>
+                                    event.data.start
+                                        .toLocaleString("es-ES", {
+                                            month: "long",
+                                            year: "numeric",
+                                        })
+                                        .toLowerCase() === month,
+                            )
+                            .map((event: any) => (
+                                <li
+                                    class="p-4 bg-primary"
+                                    style={`background-color: ${event.data.color};`}
+                                >
+                                    <a href={`/evento/${event.id}/`}>
+                                        {/* {event.data.image && (
+                                            <Image
+                                                width={720}
+                                                height={360}
+                                                src={event.data.image}
+                                                alt=""
+                                            />
+                                        )} */}
+                                        <p class="text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                                            <FormattedDate
+                                                date={event.data.start}
+                                            />
+                                            {event.data.end && (
+                                                <>
+                                                    al{" "}
+                                                    <FormattedDate
+                                                        date={event.data.end}
+                                                    />
+                                                </>
+                                            )}
+                                        </p>
+                                        <h4 class="text-2xl text-balance text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                                            {event.data.title}
+                                        </h4>
+                                    </a>
+                                </li>
+                            ))}
+                    </ul>
+                </li>
+            ))
+        }
+    </ul>
+</section>

@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import Footer from "../../components/Footer.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
 import Header from "../../components/Header.astro";
 import Layout from "../../layouts/Layout.astro";
+import List from "../../components/List.astro";
 
 const events = (await getCollection("event")).sort(
     (a, b) => b.data.start.valueOf() - a.data.start.valueOf(),
@@ -12,44 +12,8 @@ const events = (await getCollection("event")).sort(
 
 <Layout>
     <Header />
-    <main class="container mx-auto px-4 mt-4">
-        <section>
-            <ul class="space-y-4">
-                {
-                    events.map((event) => (
-                        <li
-                            class="p-4 bg-primary"
-                            style={`background-color: ${event.data.color};`}
-                        >
-                            <a href={`/evento/${event.id}/`}>
-                                {/* {event.data.image && (
-                                        <Image
-                                            width={720}
-                                            height={360}
-                                            src={event.data.image}
-                                            alt=""
-                                        />
-                                    )} */}
-                                <p class="text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-                                    <FormattedDate date={event.data.start} />
-                                    {event.data.end && (
-                                        <>
-                                            al{" "}
-                                            <FormattedDate
-                                                date={event.data.end}
-                                            />
-                                        </>
-                                    )}
-                                </p>
-                                <h4 class="text-2xl text-balance text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-                                    {event.data.title}
-                                </h4>
-                            </a>
-                        </li>
-                    ))
-                }
-            </ul>
-        </section>
+    <main class="container mx-auto px-4 my-6">
+        <List events={events} />
     </main>
     <Footer />
 </Layout>
