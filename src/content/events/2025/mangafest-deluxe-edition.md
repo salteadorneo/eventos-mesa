@@ -11,6 +11,7 @@ color: '#F44336'
 Acude al Festival de Cultura Asiática y Videojuegos de Sevilla, donde contarán con una gran ludoteca y se demostrarán juegos Zacatrus, como Zoogitives, Kryptex, Diluvio Mala Suerte y Panots.
 
 **Fechas:** 5 y 6 de abril de 2025
+
 **Ubicación:** FIBES - Palacio de Exposiciones y Congresos, Sevilla
 
 **Juegos Zacatrus que se demostrarán:**

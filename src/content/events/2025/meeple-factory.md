@@ -13,6 +13,7 @@ image: 'https://www.meeplefactory.es/wp-content/uploads/sites/4/2025/01/Cartel-M
 Descubre un año más este gran festival de Granada que da a conocer la importancia de los juegos de mesa en nuestra cultura tanto en el ocio como en uso docente. Acudirán un gran número de autores nacionales e invitados tanto nacionales como internacionales y contaremos con una zona donde mostraros todos nuestros últimos lanzamientos.
 
 **Fechas:** 26 y 27 de abril de 2025
+
 **Ubicación:** Pabellón 1 de la Feria de Muestras de Armilla, en Fermasa (Granada)
 
 **Características del evento:**

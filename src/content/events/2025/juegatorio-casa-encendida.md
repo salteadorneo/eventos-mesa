@@ -15,9 +15,13 @@ color: '#FF5722'
 Juegatorio es un nuevo recurso para la ciudadanía, un espacio gratuito para todas las edades dedicado a los juegos de mesa. Desde el ajedrez, al Terraforming Mars, pasando por el mus, el parchís o el Catán.
 
 **Fechas:** 1 de julio - 2 de agosto de 2025
+
 **Días:** Martes a sábado
+
 **Horario:** 11:00 a 15:00 y de 16:00 a 20:00
+
 **Ubicación:** Casa Encendida
+
 **Entrada:** Gratuita
 
 **Características del espacio:**

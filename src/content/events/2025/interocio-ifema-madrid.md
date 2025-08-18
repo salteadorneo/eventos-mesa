@@ -11,6 +11,7 @@ color: '#F44336'
 Zacatrus tendrá Stand propio con una tienda y una zona en la que demostraremos nuestros juegos. Habrá partidas, torneos, demostraciones, firmas de autores y mucho más. En Interocio también podrás conocer los stands de otras editoriales, asistir a charlas, presentaciones y talleres donde enterarte de lo último.
 
 **Fechas:** 28-30 de marzo de 2025
+
 **Ubicación:** Ifema, Madrid
 
 **Características del evento:**

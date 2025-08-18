@@ -11,12 +11,17 @@ color: '#673AB7'
 Apúntate a las Jornadas de Juegos de Mesa y Cartas Megagumi, que celebran su décima edición los días 11 y 12 de julio de 2025.
 
 **Fechas:** 11 y 12 de julio de 2025
+
 **Ubicación:** Casa de la Juventud (C/ Prta de Berrozana, 3), Plasencia
+
 **Organizador:** Asociación Juvenil Megagumi y Gumiparty
+
 **Entrada:** Gratuita
 
 **Horarios:**
+
 - **Viernes 11:** 17:00 a 22:00
+
 - **Sábado 12:** 11:00 a 14:00 y de 16:30 a 22:30
 
 **Características del evento:**

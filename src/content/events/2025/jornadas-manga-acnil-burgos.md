@@ -11,7 +11,9 @@ color: '#FFC107'
 Los próximos 13 y 14 de julio se celebrarán en Burgos las XII Jornadas de Manga y Ocio Alternativo, organizadas por la Asociación Cultural por los Nuevos Intereses Lúdicos (ACNIL).
 
 **Fechas:** 13 y 14 de julio de 2025
+
 **Ubicación:** Burgos
+
 **Organizador:** Asociación Cultural por los Nuevos Intereses Lúdicos (ACNIL)
 
 **Datos del evento:**
@@ -25,10 +27,5 @@ Los próximos 13 y 14 de julio se celebrarán en Burgos las XII Jornadas de Mang
 - Demostraciones
 - Torneos
 - Tiendas especializadas
-
-**Juegos Zacatrus disponibles:**
-- Zenith
-- Timemit
-- Diluvio
 
 Un evento consolidado que combina la cultura manga con el ocio alternativo, ofreciendo un espacio destacado para los juegos de mesa con gran afluencia de público.

@@ -11,6 +11,7 @@ color: '#E91E63'
 El próximo 22 y 23 de marzo de 2025 acude a este gran evento familiar de juegos de mesa en la carpa de la Malvaloca, en Collado Villalba. Un evento totalmente abierto y orientado a fomentar el juego en familia como una actividad educativa y social. ¡Asiste a jugar las novedades Zacatrus que se demostrarán!
 
 **Fechas:** 22 y 23 de marzo de 2025
+
 **Ubicación:** Carpa de la Malvaloca, Collado Villalba (Madrid)
 
 **Características del evento:**

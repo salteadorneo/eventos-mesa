@@ -12,7 +12,9 @@ image: 'https://jornadas-tdn.org/assets/images/hero/1400-and-more.jpg'
 Cientos de actividades de juegos de mesa y rol, rol en vivo y talleres en un evento que promete ser una experiencia inolvidable para todos los amantes del ocio alternativo.
 
 **Fechas:** 7-11 de agosto de 2025
+
 **Ubicación:** CEULAJ · Mollina, Málaga
+
 **URL del evento:** [https://jornadas-tdn.org/](https://jornadas-tdn.org/)
 
 **Tipos de actividades:**

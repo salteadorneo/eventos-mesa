@@ -12,7 +12,9 @@ url: 'https://ludivers.cat'
 Asiste a la 11ª edición del Festival Ludivers que tendrá lugar los días 3 y 4 de Mayo de 2025 en els Jardins de la Devesa de Girona.
 
 **Fechas:** 2, 3 y 4 de mayo de 2025
+
 **Ubicación:** Els Jardins de la Devesa, Girona
+
 **Edición:** 11ª edición
 
 El festival Ludivers gira en torno al juego y está dividido en distintos Planetas temáticos. Si acudes al **Planeta Juganer**, podrás disfrutar de las demostraciones de nuestras últimas novedades.

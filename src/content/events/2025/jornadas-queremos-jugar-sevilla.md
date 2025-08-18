@@ -12,9 +12,13 @@ url: 'https://jqj.es'
 Llega la XIV de las Jornadas Queremos Jugar. Este año, más grandes que nunca, con más de 3.000 m² dedicados al juego y la diversión.
 
 **Fechas:** 17 y 18 de mayo de 2025
+
 **Horario:** 10:00 h a 21:00 h
+
 **Ubicación:** Gran Hipódromo de Andalucía (Dos Hermanas - Sevilla)
+
 **Entrada:** Gratuita
+
 **Público:** Todos los públicos
 
 **Características del evento:**

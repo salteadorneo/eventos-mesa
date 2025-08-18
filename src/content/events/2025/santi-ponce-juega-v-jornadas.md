@@ -11,7 +11,9 @@ color: '#9C27B0'
 Apúntate a las V Jornadas de Juego de Mesa y Rol organizadas por Mesa D4 Asociación Lúdica en Santiponce en el Pabellón Polideportivo Municipal Francisco Dominguez Santi Ponce. ¡Descubre todas las sorpresas que tienen preparadas y juega a los juegos Zacatrus!
 
 **Fechas:** 15 y 16 de marzo de 2025
+
 **Ubicación:** Pabellón Polideportivo Municipal Francisco Dominguez, Santiponce (Sevilla)
+
 **Organizador:** Mesa D4 Asociación Lúdica (@mesad4asociacionludica)
 
 **Características del evento:**

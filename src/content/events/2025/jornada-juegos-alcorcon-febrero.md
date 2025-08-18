@@ -45,6 +45,7 @@ Inscríbete diciendo en caja tu nombre o llamando al teléfono de tu tienda Zaca
 ## II Torneo de Ajedrez - Plaza Río Madrid (20-23/02/2025)
 
 **Fechas:** 20 al 23 de febrero de 2025 (Simultáneas los días 20 y 21)
+
 **Ubicación:** Centro Comercial PLAZA RÍO 2 (Antonio López 109 · Madrid)
 
 Del 20 al 23 de febrero, Plaza Río 2 se convertirá en el epicentro de este fascinante juego con el II Torneo de Ajedrez, un evento diseñado para apasionados de todas las edades y niveles. Desde los más expertos hasta los que se inician en el arte de mover ficha.

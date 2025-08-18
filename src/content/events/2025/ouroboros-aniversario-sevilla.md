@@ -11,6 +11,7 @@ color: '#607D8B'
 Acude a este evento sociocultural enfocado en el ocio alternativo hacia la población joven y no tan joven, promoviendo distintas formas de ocio, como los juegos de mesa. Allí se demostrarán algunos de nuestros últimos lanzamientos.
 
 **Fechas:** 29 y 30 de marzo de 2025
+
 **Ubicación:** Cortijo del Alamillo, Parque del Alamillo, Sevilla
 
 **Características del evento:**

@@ -15,8 +15,11 @@ color: '#E91E63'
 Evento de juegos de mesa en el Casco Antiguo de Badajoz (Plaza Alta) organizado por "Entorno al fuego". El evento se realizará durante todos los sábados de agosto en horario de 17:00 a 22:00 horas y habrá 14 mesas con demostraciones de juegos.
 
 **Fechas:** Todos los sábados de agosto de 2025
+
 **Horario:** 17:00 a 22:00 horas
+
 **Ubicación:** Plaza Alta, Casco Antiguo de Badajoz
+
 **Organizador:** "Entorno al fuego"
 
 **Características del evento:**

@@ -13,7 +13,9 @@ image: 'https://alterparadox.es/wp-content/uploads/2025/07/maquetacion-cartel-um
 La Asociación Alter Paradox, una entidad sin ánimo de lucro dedicada a la promoción del ocio alternativo, celebra la XIV edición de nuestras jornadas Umbras, que tendrán lugar del jueves 14 al domingo 17 de agosto en el Polideportivo Ugarrandia de Huarte (Navarra).
 
 **Fechas:** 14-17 de agosto de 2025
+
 **Ubicación:** Polideportivo Ugarrandia de Huarte (Navarra)
+
 **Organizador:** Asociación Alter Paradox
 
 **Características del evento:**

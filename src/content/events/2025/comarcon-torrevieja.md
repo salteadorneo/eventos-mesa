@@ -11,6 +11,7 @@ color: '#00BCD4'
 Únete a las XI Jornadas de Ocio Alternativo en Torrevieja los días 29 y 30 de marzo. Organizado por @ajlacomarca, @ayuntamientotorrevieja, @torreviejajuventud, @ua_universidad y @torreviejaua. Dos días llenos de sorpresas, diversión y experiencias únicas que no querrás perderte. También podrás conocer y jugar a las novedades Zacatrus.
 
 **Fechas:** 29 y 30 de marzo de 2025
+
 **Ubicación:** Torrevieja (Alicante)
 
 **Organizadores:**
