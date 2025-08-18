@@ -1,0 +1,33 @@
+---
+import { getCollection } from "astro:content";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import Layout from "../../layouts/Layout.astro";
+import List from "../../components/List.astro";
+
+const events = (await getCollection("event"))
+    .filter((event) => {
+        const today = new Date();
+        return event.data.start >= today;
+    })
+    .sort((a, b) => a.data.start.valueOf() - b.data.start.valueOf());
+---
+
+<Layout>
+    <Header />
+    <main class="flex-1">
+        <div
+            class="relative flex items-end py-6 bg-primary bg-center bg-cover bg-no-repeat"
+        >
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-5xl text-balance text-white">
+                    Próximos eventos
+                </h1>
+            </div>
+        </div>
+        <section class="container mx-auto px-4 py-6">
+            <List events={events} />
+        </section>
+    </main>
+    <Footer />
+</Layout>
