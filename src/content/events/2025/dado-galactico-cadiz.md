@@ -3,6 +3,7 @@ title: 'Dado Galáctico'
 description: 'Evento temático espacial organizado por Mecatol Rex Cádiz con demostraciones y sorteos de TimemiT.'
 start: '2025-05-10'
 location: 'Cádiz'
+province: 'Cádiz'
 ---
 
 Mecatol Rex Cádiz organiza este fantástico evento donde se darán a conocer juegos de mesa relacionados con la temática espacial.
