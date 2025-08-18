@@ -12,13 +12,13 @@ const events = (await getCollection("event")).sort(
 
 <Layout>
     <Header />
-    <main class="container mx-auto px-4">
+    <main class="container mx-auto px-4 mt-4">
         <section>
-            <ul class="space-y-2">
+            <ul class="space-y-4">
                 {
                     events.map((event) => (
                         <li
-                            class="p-2 bg-primary"
+                            class="p-4 bg-primary"
                             style={`background-color: ${event.data.color};`}
                         >
                             <a href={`/evento/${event.id}/`}>

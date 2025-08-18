@@ -2,7 +2,7 @@
 import HeaderLink from "./HeaderLink.astro";
 ---
 
-<header>
+<header class="sticky top-0 z-50 bg-primary text-white">
     <nav class="container mx-auto p-4 flex justify-between items-center gap-4">
         <a href="/" class="flex items-center gap-2">
             <!-- <div class="hexagon h-10"></div>
@@ -10,8 +10,9 @@ import HeaderLink from "./HeaderLink.astro";
                     <span class="font-semibold">Eventos</span>
                     <br /><span class="font-light">de mesa</span>
                 </span> -->
-            <div class="flex items-baseline text-4xl">
-                Calendad<div class="hexagon h-5"></div>s
+            <div class="flex gap-2 text-xl">
+                <div class="hexagon bg-white h-8"></div>
+                <span class="max-sm:hidden">CALENDADOS</span>
             </div>
         </a>
         <div class="flex gap-4">
@@ -43,6 +44,5 @@ import HeaderLink from "./HeaderLink.astro";
     .hexagon {
         aspect-ratio: 1 / cos(30deg);
         clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
-        background: var(--color-primary);
     }
 </style>
