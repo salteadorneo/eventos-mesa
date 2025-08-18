@@ -56,20 +56,11 @@ const events = await getCollection("event");
 						) {
 							// Recurring event
 							data.daysOfWeek = event.data.daysOfWeek;
-							data.startTime = event.data.startTime || "00:00";
-							data.endTime = event.data.endTime || "23:59";
+							// data.startTime = event.data.startTime || "00:00";
+							// data.endTime = event.data.endTime || "23:59";
 							data.startRecur = event.data.startRecur;
-							// For recurring events, endRecur should also be adjusted if it's all-day
-							if (event.data.endRecur && !event.data.startTime) {
-								const endRecurDate = new Date(
-									event.data.endRecur,
-								);
-								// endRecur is already exclusive, so we don't need to add a day
-								data.endRecur = event.data.endRecur;
-							} else {
-								data.endRecur = event.data.endRecur;
-							}
-							data.allDay = !event.data.startTime; // If no startTime, it's all day
+							data.endRecur = event.data.endRecur;
+							data.allDay = true; //!event.data.startTime; // If no startTime, it's all day
 							data.classNames = ["event recurring-event"]; // Different style for recurring events
 						} else {
 							// Regular event
