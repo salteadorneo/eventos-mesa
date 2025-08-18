@@ -14,10 +14,13 @@ const events = (await getCollection("event")).sort(
     <Header />
     <main class="container mx-auto px-4">
         <section>
-            <ul>
+            <ul class="space-y-2">
                 {
                     events.map((event) => (
-                        <li>
+                        <li
+                            class="p-2 bg-primary"
+                            style={`background-color: ${event.data.color};`}
+                        >
                             <a href={`/evento/${event.id}/`}>
                                 {/* {event.data.image && (
                                         <Image
@@ -27,79 +30,20 @@ const events = (await getCollection("event")).sort(
                                             alt=""
                                         />
                                     )} */}
-                                <h4 class="title">{event.data.title}</h4>
-                                <p class="date">
-                                    {event.data.daysOfWeek ? (
+                                <p class="text-sm text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                                    <FormattedDate date={event.data.start} />
+                                    {event.data.end && (
                                         <>
-                                            {event.data.daysOfWeek.includes(
-                                                0,
-                                            ) && "Dom "}
-                                            {event.data.daysOfWeek.includes(
-                                                1,
-                                            ) && "Lun "}
-                                            {event.data.daysOfWeek.includes(
-                                                2,
-                                            ) && "Mar "}
-                                            {event.data.daysOfWeek.includes(
-                                                3,
-                                            ) && "Mié "}
-                                            {event.data.daysOfWeek.includes(
-                                                4,
-                                            ) && "Jue "}
-                                            {event.data.daysOfWeek.includes(
-                                                5,
-                                            ) && "Vie "}
-                                            {event.data.daysOfWeek.includes(
-                                                6,
-                                            ) && "Sáb "}
-                                            {event.data.startTime &&
-                                                ` - ${event.data.startTime}`}
-                                            {event.data.endTime &&
-                                                ` a ${event.data.endTime}`}
-                                            {event.data.startRecur && (
-                                                <>
-                                                    <br />
-                                                    <small>
-                                                        Desde{" "}
-                                                        <FormattedDate
-                                                            date={
-                                                                event.data
-                                                                    .startRecur
-                                                            }
-                                                        />
-                                                        {event.data
-                                                            .endRecur && (
-                                                            <>
-                                                                {" hasta "}
-                                                                <FormattedDate
-                                                                    date={
-                                                                        event
-                                                                            .data
-                                                                            .endRecur
-                                                                    }
-                                                                />
-                                                            </>
-                                                        )}
-                                                    </small>
-                                                </>
-                                            )}
-                                        </>
-                                    ) : (
-                                        <>
+                                            al{" "}
                                             <FormattedDate
-                                                date={event.data.start}
+                                                date={event.data.end}
                                             />
-                                            {event.data.end && (
-                                                <>
-                                                    al{" "}
-                                                    <FormattedDate
-                                                        date={event.data.end}
-                                                    />
-                                                </>
-                                            )}
                                         </>
                                     )}
                                 </p>
+                                <h4 class="text-5xl md:text-2xl text-balance text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+                                    {event.data.title}
+                                </h4>
                             </a>
                         </li>
                     ))
