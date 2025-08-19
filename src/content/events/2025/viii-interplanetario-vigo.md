@@ -7,6 +7,7 @@ location: "Auditorio Pazo de Congresos Mar de Vigo, Av. da Beiramar, 59, Vigo"
 province: "Pontevedra"
 url: "https://www.interplanetario.es/"
 color: "#4A90E2"
+email: "info@feriainterocio.com"
 ---
 
 **VIII Interplanetario 2025 - El Evento de Corvus Belli**

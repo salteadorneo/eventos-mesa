@@ -9,9 +9,6 @@ color: '#8BC34A'
 
 ¡Conoce las novedades de los juegos de mesa del sector! Este año cuentan con grandes premios para los participantes al evento.
 
-**Fecha:** 23 de agosto de 2025
-**Ubicación:** Quesada, Jaén
-
 **Características del evento:**
 - Quinta edición de un evento consolidado
 - Enfoque en las novedades del sector

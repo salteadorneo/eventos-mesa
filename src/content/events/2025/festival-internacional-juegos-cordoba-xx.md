@@ -8,6 +8,7 @@ province: 'Córdoba'
 color: '#D2691E'
 url: 'https://www.festivaldejuegoscordoba.es/'
 image: 'https://www.festivaldejuegoscordoba.es/wp-content/uploads/2024/10/Precartel_Festival_2025-980x1386.jpg'
+email: 'festival.cordoba.jt@gmail.com'
 ---
 
 ## XX Festival Internacional de Juegos Córdoba 2025

@@ -9,6 +9,7 @@ location: 'IFEMA - Pabellón 8, Madrid'
 province: 'Madrid'
 color: '#FF4500'
 url: 'https://feriainterocio.com/'
+email: 'info@feriainterocio.com'
 ---
 
 ## InterOcio 2025 - IV Feria Internacional del Ocio y el Entretenimiento

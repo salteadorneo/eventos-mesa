@@ -10,6 +10,7 @@ province: "Madrid"
 url: "https://freakwarsmadrid.com/"
 image: "https://freakwarsmadrid.com/themes/custom/b5freakwars/images/logos/logo10ani.png"
 color: "#8B0000"
+email: "info@freakwarsmadrid.com"
 ---
 
 **Freak Wars Madrid 2025 - 10º Aniversario**

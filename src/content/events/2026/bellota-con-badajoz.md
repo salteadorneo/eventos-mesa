@@ -8,6 +8,7 @@ province: "Badajoz"
 url: "https://bellotacon.es/"
 image: "https://bellotacon.es/wp-content/uploads/2025/08/bellotacon-9-1024x773.jpeg"
 color: "#540D0B"
+email: 'info@bellotacon.es'
 ---
 
 **Convención Internacional de Juegos de Simulación Histórica de Tablero**
