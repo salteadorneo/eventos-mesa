@@ -25,7 +25,12 @@ const {
 		<meta name="theme-color" content="#4cb9b9" />
 
 		<link rel="sitemap" href="/sitemap-index.xml" />
-
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Calendados RSS Feed"
+			href={new URL("rss.xml", Astro.site)}
+		/>
 		<link rel="canonical" href={canonicalURL} />
 
 		<title>{title}</title>
