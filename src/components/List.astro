@@ -19,7 +19,7 @@ events.forEach((event: any) => {
         {
             Array.from(months).map((month) => (
                 <li>
-                    <h2 class="text-3xl mb-4">{month}</h2>
+                    <h2 class="text-2xl mb-4">{month}</h2>
                     <ul class="space-y-0.5 mb-4">
                         {events
                             .filter(
@@ -33,9 +33,18 @@ events.forEach((event: any) => {
                             )
                             .map((event: any) => (
                                 <li
-                                    class="relative p-4 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_99.5%_100%,_0.5%_100%)]"
-                                    style={`background-color: ${event.data.color}; background-image: url(${event.data.image})`}
+                                    class="relative p-6 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_99%_100%,_1%_100%)]"
+                                    style={`background-color: ${event.data.color}`}
                                 >
+                                    {event.data.image && (
+                                        <div class="absolute top-1/2 right-8 -translate-y-1/2 z-50 w-18 perspective-dramatic">
+                                            <img
+                                                src={event.data.image.toString()}
+                                                alt={event.data.title}
+                                                class="-rotate-y-6"
+                                            />
+                                        </div>
+                                    )}
                                     <div
                                         class={`absolute inset-0 ${event.data.image && "bg-black! opacity-50"}`}
                                         style={`background-color: ${event.data.color};`}

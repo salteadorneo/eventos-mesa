@@ -27,6 +27,9 @@ const events = await getCollection(
     ({ data }) =>
         data.province && Astro.params.province.match(slugify(data.province)),
 );
+
+const future = events.filter((event) => event.data.start > new Date());
+const past = events.filter((event) => event.data.start <= new Date());
 ---
 
 <Layout>
@@ -42,7 +45,28 @@ const events = await getCollection(
             </div>
         </div>
         <section class="w-full max-w-6xl mx-auto px-4 py-6">
-            <List events={events} />
+            <h2 class="text-3xl mb-4">
+                Próximos eventos en {province}
+            </h2>
+            {
+                future.length === 0 && (
+                    <p class="text-gray-500">
+                        No hay eventos próximos en {province}.
+                    </p>
+                )
+            }
+            <List events={future} />
+            <h2 class="text-3xl mb-4 mt-12">
+                Eventos pasados en {province}
+            </h2>
+            {
+                past.length === 0 && (
+                    <p class="text-gray-500">
+                        No hay eventos pasados en {province}.
+                    </p>
+                )
+            }
+            <List events={past} />
         </section>
     </main>
     <Footer />
