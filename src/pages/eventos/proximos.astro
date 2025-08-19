@@ -4,6 +4,7 @@ import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import Layout from "@/layouts/Layout.astro";
 import List from "@/components/List.astro";
+import Title from "@/components/Title.astro";
 
 const events = (await getCollection("event"))
     .filter((event) => {
@@ -16,15 +17,7 @@ const events = (await getCollection("event"))
 <Layout>
     <Header />
     <main class="flex-1">
-        <div
-            class="relative flex items-end py-6 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_100%_80%,_0%_100%)]"
-        >
-            <div class="w-full max-w-6xl mx-auto px-4">
-                <h1 class="text-3xl md:text-5xl text-balance text-white">
-                    Próximos eventos
-                </h1>
-            </div>
-        </div>
+        <Title title="Próximos eventos" />
         <section class="w-full max-w-6xl mx-auto px-4 py-6">
             <List events={events} />
         </section>

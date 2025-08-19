@@ -5,6 +5,7 @@ import Header from "@/components/Header.astro";
 import Layout from "@/layouts/Layout.astro";
 import List from "@/components/List.astro";
 import Filter from "@/components/Filter.astro";
+import Title from "@/components/Title.astro";
 
 const events = (await getCollection("event")).sort(
     (a, b) => b.data.start.valueOf() - a.data.start.valueOf(),
@@ -14,18 +15,9 @@ const events = (await getCollection("event")).sort(
 <Layout>
     <Header />
     <main class="flex-1">
-        <div
-            class="relative flex items-end py-6 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_100%_80%,_0%_100%)]"
-        >
-            <div
-                class="w-full max-w-6xl mx-auto px-4 flex items-center justify-between"
-            >
-                <h1 class="text-3xl md:text-5xl text-balance text-white">
-                    Listado de eventos
-                </h1>
-                <Filter />
-            </div>
-        </div>
+        <Title title="Listado de eventos">
+            <Filter />
+        </Title>
         <section class="w-full max-w-6xl mx-auto px-4 py-6">
             <List events={events} />
         </section>

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer.astro";
 import { slugify } from "@/utils";
 import List from "@/components/List.astro";
 import Filter from "@/components/Filter.astro";
+import Title from "@/components/Title.astro";
 
 export async function getStaticPaths() {
     const events = await getCollection("event");
@@ -40,18 +41,9 @@ const past = events
 <Layout>
     <Header />
     <main class="flex-1">
-        <div
-            class="relative flex items-end py-6 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_100%_80%,_0%_100%)]"
-        >
-            <div
-                class="w-full max-w-6xl mx-auto px-4 flex items-center justify-between"
-            >
-                <h1 class="text-3xl md:text-5xl text-balance text-white">
-                    Eventos en {province}
-                </h1>
-                <Filter />
-            </div>
-        </div>
+        <Title title={`Eventos en ${province}`}>
+            <Filter />
+        </Title>
         <section class="w-full max-w-6xl mx-auto px-4 py-6">
             <h2 class="text-3xl mb-4">
                 Próximos eventos en {province}
