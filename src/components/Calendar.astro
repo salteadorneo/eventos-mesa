@@ -18,7 +18,6 @@ const { events } = Astro.props;
 <script src="/lib/fullcalendar.min.js" is:inline></script>
 <script is:inline define:vars={{ events }}>
     document.addEventListener("astro:page-load", () => {
-        // guardar en localstorage el mes y año que se está mostrando
         const savedDate = localStorage.getItem("calendarDate");
         let initialDate = savedDate ? new Date(savedDate) : new Date();
 
@@ -26,6 +25,13 @@ const { events } = Astro.props;
         var calendar = new FullCalendar.Calendar(calendarEl, {
             firstDay: 1,
             locale: "es",
+            buttonText: {
+                today: "Hoy",
+                month: "Mes",
+                week: "Semana",
+                day: "Día",
+                list: "Lista",
+            },
             showNonCurrentDates: false,
             initialDate,
             events: events.map((event) => {
