@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import Footer from "../components/Footer.astro";
 import Dates from "../components/Dates.astro";
 import Header from "../components/Header.astro";
+import Logo from "../components/Logo.astro";
 import Layout from "./Layout.astro";
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
@@ -25,6 +26,16 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     {image && 
                         <div class="sm:absolute top-0 right-6 z-50 w-48 sm:perspective-dramatic max-sm:mb-6">
                             <img src={image.toString()} alt={title} class="-rotate-y-6" />
+                        </div>
+                    }
+                    {!image && 
+                        <div class="max-sm:hidden sm:absolute -bottom-16 right-6 z-50 w-48 sm:perspective-dramatic max-sm:mb-6">
+                            <div class="size-48 grid place-content-center">
+                                <div
+                                    class="invert h-36 aspect-[1/1.1547] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"
+                                    style={`background-color: ${color};`}
+                                />
+                            </div>
                         </div>
                     }
                     <div
@@ -131,7 +142,6 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     />
                 )
             }
-            <div class="h-8"></div>
         </article>
     </main>
     <Footer />
