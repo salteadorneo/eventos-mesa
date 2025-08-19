@@ -6,7 +6,7 @@ end: '2025-08-11'
 location: 'CEULAJ. Mollina, Málaga'
 province: 'Málaga'
 color: '#111c12'
-image: 'https://jornadas-tdn.org/assets/images/hero/1400-and-more.jpg'
+image: 'https://jornadas-tdn.org/assets/images/actividades/thumbnail_defecto_tierradenadie.png'
 url: 'https://jornadas-tdn.org/'
 ---
 
