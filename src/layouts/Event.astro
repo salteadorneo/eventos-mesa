@@ -8,12 +8,12 @@ import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 type Props = CollectionEntry<"event">;
 
-const { id, data: { title, start, end, startTime, endTime, image, location, color, url, email } } = Astro.props;
+const { id, data: { title, description, start, end, startTime, endTime, image, location, color, url, email } } = Astro.props;
 
 const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
 ---
 
-<Layout>
+<Layout title={`${title} · Calendados`} description={description}>
     <Header color={color} />
     <main>
         <article>
