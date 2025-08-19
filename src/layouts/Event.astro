@@ -23,7 +23,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
             >
                 <div class="relative w-full max-w-6xl mx-auto px-4">
                     {image && 
-                        <div class="absolute top-0 right-0 z-50 w-48 perspective-dramatic">
+                        <div class="sm:absolute top-0 right-6 z-50 w-48 sm:perspective-dramatic max-sm:mb-6">
                             <img src={image.toString()} alt={title} class="-rotate-y-6" />
                         </div>
                     }
@@ -34,7 +34,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         <Dates start={start} end={end} />
                     </div>
                     <h1
-                        class="pr-48 text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                        class="sm:pr-48 text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
                         transition:name={`title-${id}`}
                     >
                         {title}
@@ -51,7 +51,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     {location && 
                         <a 
                             href="#map" 
-                            class="flex items-center gap-2 hover:text-primary transition-colors"
+                            class="flex items-center gap-2 font-semibold hover:text-primary transition-colors"
                             onmouseover={`this.style.color='${color}'`}
                             onmouseout={`this.style.color='inherit'`}
                             transition:name={`location-${id}`}
@@ -65,7 +65,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="flex items-center gap-2 hover:text-primary transition-colors"
+                            class="flex items-center gap-2 font-semibold hover:text-primary transition-colors"
                             onmouseover={`this.style.color='${color}'`}
                             onmouseout={`this.style.color='inherit'`}
                         >
@@ -78,22 +78,22 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     {email && 
                         <a
                             href={`mailto:${email}`}
-                            class="flex items-center gap-2 hover:text-primary transition-colors"
+                            class="flex items-center gap-2 font-semibold hover:text-primary transition-colors"
                             onmouseover={`this.style.color='${color}'`}
                             onmouseout={`this.style.color='inherit'`}
                         >
                             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
-                            {/* <span class="max-sm:hidden">{email}</span> */}
+                            <span class="max-sm:hidden">{email}</span>
                         </a>
                     }
                     <button
-                        class="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+                        class="flex items-center gap-2 font-semibold hover:text-primary transition-colors cursor-pointer"
                         onclick={`navigator.share({ title: '${title}', url: window.location.href })`}
                         onmouseover={`this.style.color='${color}'`}
                         onmouseout={`this.style.color='inherit'`}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
-                        <!-- <span class="max-sm:hidden">Compartir</span> -->
+                        <span class="">Compartir</span>
                     </button>
                 </div>
             </div>
