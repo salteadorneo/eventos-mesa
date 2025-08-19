@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import path from 'path';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
@@ -11,9 +10,4 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  }
 });
