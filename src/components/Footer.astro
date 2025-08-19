@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
-import { slugify } from "../utils";
+import { slugify } from "@/utils";
 
 const events = await getCollection("event");
 const provinces = new Set<string>();
@@ -12,9 +12,7 @@ events.forEach((event: CollectionEntry<"event">) => {
 });
 ---
 
-<footer
-    class="bg-primary text-white py-6"
->
+<footer class="bg-primary text-white py-6">
     <div class="w-full max-w-6xl mx-auto px-4 mb-12">
         <p class="text-center mb-2">Eventos por provincia</p>
         <ul class="flex flex-wrap justify-center gap-x-3">

@@ -10,4 +10,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  }
 });

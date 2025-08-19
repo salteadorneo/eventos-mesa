@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection, render } from "astro:content";
-import Event from "../../layouts/Event.astro";
+import Event from "@/layouts/Event.astro";
 
 export async function getStaticPaths() {
     const events = await getCollection("event");
