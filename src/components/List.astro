@@ -37,7 +37,7 @@ events.forEach((event: any) => {
                                     style={`background-color: ${event.data.color}`}
                                 >
                                     {event.data.image && (
-                                        <div class="absolute top-1/2 right-8 -translate-y-1/2 z-50 w-18 perspective-dramatic">
+                                        <div class="hidden sm:absolute top-1/2 right-8 -translate-y-1/2 z-50 w-18 perspective-dramatic">
                                             <img
                                                 src={event.data.image.toString()}
                                                 alt={event.data.title}
@@ -45,10 +45,6 @@ events.forEach((event: any) => {
                                             />
                                         </div>
                                     )}
-                                    <div
-                                        class={`absolute inset-0 ${event.data.image && "bg-black! opacity-50"}`}
-                                        style={`background-color: ${event.data.color};`}
-                                    />
                                     <a href={`/evento/${event.id}/`}>
                                         <p
                                             class="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
@@ -90,7 +86,7 @@ events.forEach((event: any) => {
                                                     <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
                                                     <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                                                 </svg>
-                                                {event.data.location}
+                                                <span class="truncate">{event.data.location}</span>
                                             </p>
                                         )}
                                     </a>
