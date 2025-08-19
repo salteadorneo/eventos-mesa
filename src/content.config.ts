@@ -14,12 +14,19 @@ const event = defineCollection({
             province: z.string().optional(),
             color: z.string().optional(),
             url: z.string().url().optional(),
-            // Recurring event properties
             daysOfWeek: z.array(z.number()).optional(),
             startTime: z.string().optional(),
             endTime: z.string().optional(),
             startRecur: z.coerce.date().optional(),
             endRecur: z.coerce.date().optional(),
+            email: z.string().email().optional(),
+            facebook: z.string().url().optional(),
+            instagram: z.string().url().optional(),
+            twitter: z.string().url().optional(),
+            youtube: z.string().url().optional(),
+            tiktok: z.string().url().optional(),
+            mastodon: z.string().url().optional(),
+            discord: z.string().url().optional(),
         }),
 });
 
