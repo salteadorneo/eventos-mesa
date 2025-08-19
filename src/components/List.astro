@@ -1,5 +1,5 @@
 ---
-import FormattedDate from "../components/FormattedDate.astro";
+import Dates from "./Dates.astro";
 
 const { events } = Astro.props;
 
@@ -33,7 +33,7 @@ events.forEach((event: any) => {
                             )
                             .map((event: any) => (
                                 <li
-                                    class="relative p-4 bg-primary bg-center bg-cover bg-no-repeat clip-path-polygon"
+                                    class="relative p-4 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_99.5%_100%,_0.5%_100%)]"
                                     style={`background-color: ${event.data.color}; background-image: url(${event.data.image})`}
                                 >
                                     <div
@@ -45,17 +45,10 @@ events.forEach((event: any) => {
                                             class="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
                                             transition:name={`date-${event.id}`}
                                         >
-                                            <FormattedDate
-                                                date={event.data.start}
+                                            <Dates
+                                                start={event.data.start}
+                                                end={event.data.end}
                                             />
-                                            {event.data.end && (
-                                                <>
-                                                    al{" "}
-                                                    <FormattedDate
-                                                        date={event.data.end}
-                                                    />
-                                                </>
-                                            )}
                                         </p>
                                         <h3
                                             class="text-2xl md:text-3xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
@@ -100,9 +93,3 @@ events.forEach((event: any) => {
         }
     </ul>
 </section>
-
-<style>
-    .clip-path-polygon {
-        clip-path: polygon(0 0, 100% 0, 99.5% 100%, 0.5% 100%);
-    }
-</style>
