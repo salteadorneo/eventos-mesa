@@ -1,0 +1,72 @@
+---
+interface Props {
+    start: Date;
+    end?: Date;
+}
+
+const { start, end } = Astro.props;
+
+const isSameMonth = start.getMonth() === (end?.getMonth() ?? start.getMonth());
+const isSameYear =
+    start.getFullYear() === (end?.getFullYear() ?? start.getFullYear());
+const isSameDay = start.getDate() === (end?.getDate() ?? start.getDate());
+---
+
+{
+    !isSameDay && isSameMonth && isSameYear ? (
+        <>
+            <time datetime={start.toISOString()}>
+                {start.toLocaleDateString("es-ES", {
+                    day: "numeric",
+                })}
+            </time>{" "}
+            al{" "}
+            <time datetime={end?.toISOString()}>
+                {end?.toLocaleDateString("es-ES", {
+                    day: "numeric",
+                })}
+            </time>{" "}
+            de{" "}
+            {start.toLocaleDateString("es-ES", {
+                month: "long",
+                year: "numeric",
+            })}
+        </>
+    ) : isSameDay && isSameMonth && isSameYear ? (
+        <>
+            <time datetime={start.toISOString()}>
+                {start.toLocaleDateString("es-ES", {
+                    day: "numeric",
+                })}
+            </time>{" "}
+            de{" "}
+            {start.toLocaleDateString("es-ES", {
+                month: "long",
+                year: "numeric",
+            })}
+        </>
+    ) : (
+        <>
+            <time datetime={start.toISOString()}>
+                {start.toLocaleDateString("es-ES", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                })}
+            </time>
+            {end && (
+                <>
+                    {" "}
+                    -{" "}
+                    <time datetime={end.toISOString()}>
+                        {end.toLocaleDateString("es-ES", {
+                            day: "numeric",
+                            month: "long",
+                            year: "numeric",
+                        })}
+                    </time>
+                </>
+            )}
+        </>
+    )
+}
