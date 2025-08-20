@@ -105,7 +105,6 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"
                                 >
                                     <>
                                         <path
@@ -117,7 +116,9 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                         <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                                     </>
                                 </svg>
-                                {location}
+                                <span class="max-sm:truncate max-sm:max-w-xs">
+                                    {location}
+                                </span>
                             </a>
                         )
                     }
@@ -141,7 +142,6 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-link"
                                 >
                                     <>
                                         <path
@@ -176,7 +176,6 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                     stroke-width="2"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
                                 >
                                     <>
                                         <path
@@ -208,7 +207,6 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-share"
                             ><path stroke="none" d="M0 0h24v24H0z" fill="none"
                             ></path><path
                                 d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
@@ -221,6 +219,49 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         >
                         Compartir
                     </button>
+                    <button
+                        class="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+                        onclick={`addToFavorites('${id}')`}
+                        onmouseover={`this.style.color='${color}'`}
+                        onmouseout={`this.style.color='inherit'`}
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                            ></path><path
+                                d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                            ></path></svg
+                        >
+                        Añadir a favoritos
+                    </button>
+                    <script is:inline>
+                        function addToFavorites(eventId) {
+                            let favorites =
+                                JSON.parse(localStorage.getItem("favorites")) ||
+                                [];
+                            if (favorites.includes(eventId)) {
+                                favorites = favorites.filter(
+                                    (fav) => fav !== eventId,
+                                );
+                                // alert("Evento eliminado de favoritos");
+                            } else {
+                                favorites.push(eventId);
+                                // alert("Evento añadido a favoritos");
+                            }
+                            localStorage.setItem(
+                                "favorites",
+                                JSON.stringify(favorites),
+                            );
+                        }
+                    </script>
                 </div>
             </div>
             <div class="content w-full max-w-6xl mx-auto py-6 px-4 space-y-4">
