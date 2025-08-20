@@ -24,3 +24,79 @@
 .fc .fc-button-primary:focus {
 	box-shadow: none;
 }
+
+body {
+    font-family: 'Noway', sans-serif;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-Light.woff2') format('woff2'),
+        url('../assets/fonts/Noway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-Italic.woff2') format('woff2'),
+        url('../assets/fonts/Noway-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Noway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-Light.woff2') format('woff2'),
+        url('../assets/fonts/Noway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Noway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-MediumItalic.woff2') format('woff2'),
+        url('../assets/fonts/Noway-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway.woff2') format('woff2'),
+        url('../assets/fonts/Noway.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noway';
+    src: url('../assets/fonts/Noway-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Noway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
