@@ -67,7 +67,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         <Dates start={start} end={end} />
                     </div>
                     <h1
-                        class="sm:pr-52 text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                        class="sm:pr-56 text-5xl md:text-6xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
                         transition:name={`title-${id}`}
                     >
                         {title}
@@ -84,7 +84,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                 style={`border-color: ${color};`}
             >
                 <div
-                    class="w-full max-w-6xl mx-auto px-4 sm:pr-52 flex flex-col sm:flex-row flex-wrap gap-3"
+                    class="w-full max-w-6xl mx-auto px-4 sm:pr-56 flex flex-col sm:flex-row flex-wrap gap-3"
                 >
                     {
                         location && (
@@ -264,7 +264,9 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     </script>
                 </div>
             </div>
-            <div class="content w-full max-w-6xl mx-auto py-6 px-4 space-y-4">
+            <div
+                class="content w-full max-w-6xl mx-auto py-6 px-4 sm:pr-56 space-y-4"
+            >
                 <slot />
                 <section class="flex flex-wrap items-center gap-2 mb-6">
                     <AddToCalendarButton
