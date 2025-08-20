@@ -5,14 +5,14 @@ const { id, data, class: classes } = Astro.props;
 ---
 
 <div
-    class={`flex items-center gap-2 ${classes}`}
+    class={`flex flex-wrap items-center gap-2 ${classes}`}
     transition:name={`tags-${id}`}
 >
     {
         data.tags?.map((tag: string) => (
             <a
                 href={`/eventos/tag/${slugify(tag)}`}
-                class="bg-primary text-white py-0.5 px-3 [clip-path:polygon(5%_0,100%_0,95%_100%,0_100%)]"
+                class="bg-primary text-white py-0.5 px-3 [clip-path:polygon(5px_0,100%_0,95%_100%,0_100%)]"
                 style={`background-color: ${data.color};`}
             >
                 {tag}
