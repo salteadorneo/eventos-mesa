@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-	--color-primary: #4cb9b9;
+	--color-primary: #181818;
 
 	--fc-button-bg-color: var(--color-primary);
 	--fc-button-border-color: var(--color-primary);
 
-	--fc-button-active-bg-color: #3a9a9a;
-	--fc-button-active-border-color: #3a9a9a;
+	--fc-button-active-bg-color: #181818;
+	--fc-button-active-border-color: #181818;
 
-	--fc-button-hover-bg-color: #3a9a9a;
-	--fc-button-hover-border-color: #3a9a9a;
+	--fc-button-hover-bg-color: #353535;
+	--fc-button-hover-border-color: #353535;
 }
 
 @theme {
