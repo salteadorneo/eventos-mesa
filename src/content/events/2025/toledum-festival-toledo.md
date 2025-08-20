@@ -7,7 +7,7 @@ location: 'Palacio de Congresos El Greco - Paseo del Miradero, s/n, 45003 Toledo
 province: 'Toledo'
 color: '#D41568'
 url: 'https://toledum.com'
-image: 'https://eventos.salteadorneo.dev/evento/2025/toledum-festival-toledo.jpg'
+image: 'https://agendados.es/evento/2025/toledum-festival-toledo.jpg'
 tags: ['Juegos de mesa']
 ---
 

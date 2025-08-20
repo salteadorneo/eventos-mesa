@@ -7,7 +7,7 @@ location: 'Granada'
 province: 'Granada'
 color: '#FF9800'
 url: 'https://www.meeplefactory.es/'
-image: 'https://eventos.salteadorneo.dev/evento/2025/meeple-factory.jpg'
+image: 'https://agendados.es/evento/2025/meeple-factory.jpg'
 tags: ['Juegos de mesa', 'Festival']
 ---
 

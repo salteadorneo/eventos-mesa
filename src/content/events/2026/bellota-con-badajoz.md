@@ -6,7 +6,7 @@ end: "2026-01-25"
 location: "Badajoz"
 province: "Badajoz"
 url: "https://bellotacon.es/"
-image: "https://eventos.salteadorneo.dev/evento/2026/bellota-con-badajoz.jpeg"
+image: "https://agendados.es/evento/2026/bellota-con-badajoz.jpeg"
 color: "#540D0B"
 email: 'info@bellotacon.es'
 tags: ['Wargames', 'Simulación histórica']

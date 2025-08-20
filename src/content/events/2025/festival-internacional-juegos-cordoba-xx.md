@@ -7,7 +7,7 @@ location: 'Palacio de la Merced, Córdoba'
 province: 'Córdoba'
 color: '#D2691E'
 url: 'https://www.festivaldejuegoscordoba.es/'
-image: 'https://eventos.salteadorneo.dev/evento/2025/festival-internacional-juegos-cordoba-xx.jpg'
+image: 'https://agendados.es/evento/2025/festival-internacional-juegos-cordoba-xx.jpg'
 email: 'festival.cordoba.jt@gmail.com'
 tags: ['Juegos de mesa']
 ---

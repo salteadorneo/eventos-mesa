@@ -7,7 +7,7 @@ location: 'Polideportivo Ugarrandia de Huarte, Navarra'
 province: 'Navarra'
 color: '#673AB7'
 url: 'https://alterparadox.es/umbras-2025/'
-image: 'https://eventos.salteadorneo.dev/evento/2025/alter-paradox-jornadas-umbras.png'
+image: 'https://agendados.es/evento/2025/alter-paradox-jornadas-umbras.png'
 tags: ['Juegos de mesa', 'Rol', 'Wargames', 'Torneos']
 ---
 

@@ -6,7 +6,7 @@ end: '2025-08-11'
 location: 'CEULAJ. Mollina, Málaga'
 province: 'Málaga'
 color: '#111c12'
-image: 'https://eventos.salteadorneo.dev/evento/2025/tierra-de-nadie.png'
+image: 'https://agendados.es/evento/2025/tierra-de-nadie.png'
 url: 'https://jornadas-tdn.org/'
 tags: ['Juegos de mesa', 'Rol']
 ---

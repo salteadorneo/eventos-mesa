@@ -8,7 +8,7 @@ endTime: "14:00"
 location: "Palacio de Congresos Europa, Av. Gasteiz, 85, Vitoria-Gasteiz"
 province: "Álava"
 url: "https://freakfestival.es/"
-image: "https://eventos.salteadorneo.dev/evento/2025/freak-festival-vitoria.png"
+image: "https://agendados.es/evento/2025/freak-festival-vitoria.png"
 color: "#8A2BE2"
 tags: ['Juegos de mesa', 'Rol']
 ---
