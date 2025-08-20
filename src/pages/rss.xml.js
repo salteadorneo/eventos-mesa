@@ -7,7 +7,7 @@ export async function GET(context) {
     });
 
   return rss({
-    title: 'Calendados',
+    title: 'Agendados',
     description: 'Calendario de eventos de rol y juegos de mesa en España',
     site: context.site,
     items: blog.map((post) => ({

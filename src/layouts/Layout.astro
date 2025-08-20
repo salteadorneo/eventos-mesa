@@ -5,7 +5,7 @@ import { ClientRouter } from "astro:transitions";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const {
-	title = "Calendados · Calendario de eventos de rol y juegos de mesa en España",
+	title = "Agendados · Calendario de eventos de rol y juegos de mesa en España",
 	description = "Calendario de eventos de rol y juegos de mesa en España",
 } = Astro.props;
 ---
@@ -28,7 +28,7 @@ const {
 		<link
 			rel="alternate"
 			type="application/rss+xml"
-			title="Calendados RSS Feed"
+			title="Agendados RSS Feed"
 			href={new URL("rss.xml", Astro.site)}
 		/>
 		<link rel="canonical" href={canonicalURL} />

@@ -5,9 +5,9 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/?utm_source=homescreen",
-    "name": "Calendados",
-    "short_name": "calendados",
-    "description": "Calendados es una aplicación web para gestionar eventos de juegos de mesa, con un enfoque en la comunidad y la organización de torneos.",
+    "name": "Agendados",
+    "short_name": "agendados",
+    "description": "Agendados es una aplicación web para gestionar eventos de juegos de mesa, con un enfoque en la comunidad y la organización de torneos.",
     "icons": [
         {
             "src": "/icon-192x192.png",
