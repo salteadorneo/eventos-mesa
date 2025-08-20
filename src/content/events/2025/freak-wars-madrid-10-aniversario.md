@@ -8,7 +8,7 @@ endTime: "21:00"
 location: "La Nave, Villaverde, Madrid"
 province: "Madrid"
 url: "https://freakwarsmadrid.com/"
-image: "https://freakwarsmadrid.com/themes/custom/b5freakwars/images/logos/logo10ani.png"
+image: "https://eventos.salteadorneo.dev/evento/2025/freak-wars-madrid-10-aniversario.png"
 color: "#8B0000"
 email: "info@freakwarsmadrid.com"
 ---

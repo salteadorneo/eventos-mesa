@@ -6,7 +6,6 @@ end: "2025-01-26"
 location: "Badajoz"
 province: "Badajoz"
 url: "https://bellotacon.es/ediciones/8-bellota-con/"
-image: "https://bellotacon.es/wp-content/uploads/2024/10/cartel-8-bellota-con.jpg"
 color: "#8B4513"
 ---
 

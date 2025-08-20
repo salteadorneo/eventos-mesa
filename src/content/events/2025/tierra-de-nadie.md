@@ -6,7 +6,7 @@ end: '2025-08-11'
 location: 'CEULAJ. Mollina, Málaga'
 province: 'Málaga'
 color: '#111c12'
-image: 'https://jornadas-tdn.org/assets/images/actividades/thumbnail_defecto_tierradenadie.png'
+image: 'https://eventos.salteadorneo.dev/evento/2025/tierra-de-nadie.png'
 url: 'https://jornadas-tdn.org/'
 ---
 
