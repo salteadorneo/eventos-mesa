@@ -6,6 +6,7 @@ end: '2025-06-08'
 location: 'Quart de Poblet, Valencia'
 province: 'Valencia'
 color: '#4CAF50'
+tags: ['Juegos de mesa', 'Demostraciones']
 ---
 
 Acude a la celebración de las jornadas de Jesta 2025. Este año son los días 7 y 8 de junio, como siempre, en Quart de Poblet, Valencia.

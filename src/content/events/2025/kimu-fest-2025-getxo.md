@@ -6,6 +6,7 @@ end: '2025-06-29'
 location: 'Getxo, Bizkaia'
 province: 'Bizkaia'
 color: '#795548'
+tags: ['Juegos de mesa', 'Rol', 'Gratis']
 ---
 
 La Asociación Kimera, de Getxo, Bizkaia organiza la Kimu Fest 2025, unas jornadas gratuitas de juegos de mesa y rol en la Romo Kultur Etxea de Getxo los días 27, 28 y 29 de junio.

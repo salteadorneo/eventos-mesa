@@ -10,6 +10,7 @@ province: 'Madrid'
 color: '#FF4500'
 url: 'https://feriainterocio.com/'
 email: 'info@feriainterocio.com'
+tags: ['Juegos de mesa', 'Feria']
 ---
 
 ## InterOcio 2025 - IV Feria Internacional del Ocio y el Entretenimiento

@@ -8,6 +8,7 @@ province: 'Navarra'
 color: '#673AB7'
 url: 'https://alterparadox.es/umbras-2025/'
 image: 'https://eventos.salteadorneo.dev/evento/2025/alter-paradox-jornadas-umbras.png'
+tags: ['Juegos de mesa', 'Rol', 'Wargames', 'Torneos', 'Gratis']
 ---
 
 La Asociación Alter Paradox, una entidad sin ánimo de lucro dedicada a la promoción del ocio alternativo, celebra la XIV edición de nuestras jornadas Umbras, que tendrán lugar del jueves 14 al domingo 17 de agosto en el Polideportivo Ugarrandia de Huarte (Navarra).

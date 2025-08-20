@@ -6,6 +6,7 @@ end: '2025-02-23'
 location: 'Centro Comercial PLAZA RÍO 2 (Antonio López 109 · Madrid)'
 province: 'Madrid'
 color: '#795548'
+tags: ['Ajedrez', 'Gratis']
 ---
 
 Del 20 al 23 de febrero, Plaza Río 2 se convertirá en el epicentro de este fascinante juego con el II Torneo de Ajedrez, un evento diseñado para apasionados de todas las edades y niveles.

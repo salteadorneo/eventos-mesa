@@ -5,6 +5,7 @@ start: '2025-07-06'
 location: 'Gijón, Asturias'
 province: 'Asturias'
 color: '#009688'
+tags: ['Torneos', 'Competitivo']
 ---
 
 Ven a jugar, competir y reír en un torneo donde cada carta cuenta, y donde solo un capitán podrá decir que venció al diluvio.

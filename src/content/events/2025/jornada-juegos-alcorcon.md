@@ -6,6 +6,7 @@ end: '2025-02-01'
 location: 'Área de infancia Ayuntamiento de Alcorcón (Madrid) - Polideportivo M4'
 province: 'Madrid'
 color: '#3498db'
+tags: ['Juegos de mesa', 'Familiar']
 ---
 
 Jornada de juegos de mesa anual para las familias de Alcorcón que tendrá lugar durante la tarde del sábado.

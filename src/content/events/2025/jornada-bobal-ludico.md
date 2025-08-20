@@ -5,6 +5,7 @@ start: '2025-04-05'
 location: 'Valencia'
 province: 'Valencia'
 color: '#FF9800'
+tags: ['Juegos de mesa', 'Gratis']
 ---
 
 Ven a pasar una jornada de puertas abiertas disfrutando de juegos de mesa y ocio para toda la familia. La entrada es gratuita y durante todo el día habrá demostraciones y sorteos de algunos de nuestros juegos. Disfruta de un día de ocio diferente.

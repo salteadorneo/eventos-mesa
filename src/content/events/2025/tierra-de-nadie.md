@@ -8,6 +8,7 @@ province: 'Málaga'
 color: '#111c12'
 image: 'https://eventos.salteadorneo.dev/evento/2025/tierra-de-nadie.png'
 url: 'https://jornadas-tdn.org/'
+tags: ['Juegos de mesa', 'Rol']
 ---
 
 Cientos de actividades de juegos de mesa y rol, rol en vivo y talleres en un evento que promete ser una experiencia inolvidable para todos los amantes del ocio alternativo.

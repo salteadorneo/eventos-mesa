@@ -9,6 +9,7 @@ color: '#D2691E'
 url: 'https://www.festivaldejuegoscordoba.es/'
 image: 'https://eventos.salteadorneo.dev/evento/2025/festival-internacional-juegos-cordoba-xx.jpg'
 email: 'festival.cordoba.jt@gmail.com'
+tags: ['Juegos de mesa', 'Gratis']
 ---
 
 ## XX Festival Internacional de Juegos Córdoba 2025

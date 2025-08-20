@@ -6,6 +6,7 @@ end: '2025-07-14'
 location: 'Burgos'
 province: 'Burgos'
 color: '#FFC107'
+tags: ['Juegos de mesa', 'Ocio alternativo']
 ---
 
 Los próximos 13 y 14 de julio se celebrarán en Burgos las XII Jornadas de Manga y Ocio Alternativo, organizadas por la Asociación Cultural por los Nuevos Intereses Lúdicos (ACNIL).

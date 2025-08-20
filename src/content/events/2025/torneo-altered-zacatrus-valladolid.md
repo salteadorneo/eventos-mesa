@@ -6,6 +6,7 @@ location: 'Valladolid'
 province: 'Valladolid'
 color: '#FF9800'
 url: 'https://zacatrus.es'
+tags: ['Torneos', 'TCG']
 ---
 
 ## Torneo Altered TCG - Zacatrus Valladolid

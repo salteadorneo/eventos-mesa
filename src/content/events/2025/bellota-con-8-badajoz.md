@@ -7,6 +7,7 @@ location: "Badajoz"
 province: "Badajoz"
 url: "https://bellotacon.es/ediciones/8-bellota-con/"
 color: "#8B4513"
+tags: ['Wargames', 'Simulación histórica']
 ---
 
 **8ª Edición de la Convención Internacional de Juegos de Simulación Histórica de Tablero**

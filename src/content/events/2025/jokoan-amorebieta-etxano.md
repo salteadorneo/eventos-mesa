@@ -9,6 +9,7 @@ location: "Frontón Amorebieta IV, Centro Zelaieta, Amorebieta-Etxano"
 province: "Bizkaia"
 url: "https://amorebieta-etxano.eus/es/juventud/jokoan/"
 color: "#228B22"
+tags: ['Juegos de mesa', 'Familiar']
 ---
 
 **Jokoan 2025 - Festival de Juegos de Mesa de Amorebieta-Etxano**

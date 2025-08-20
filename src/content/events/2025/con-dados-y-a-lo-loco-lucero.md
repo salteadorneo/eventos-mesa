@@ -5,6 +5,7 @@ start: '2025-09-13'
 location: 'Madrid'
 province: 'Madrid'
 color: '#2196F3'
+tags: ['Juegos de mesa', 'Familiar']
 ---
 
 Por cuarto año consecutivo, el barrio Lucero (Madrid) acoge la jornada de juegos de mesa "Con Dados y a lo Loco", una iniciativa que nació en el marco de las fiestas populares del barrio con la intención de acercar los juegos de mesa al vecindario.

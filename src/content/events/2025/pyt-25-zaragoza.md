@@ -9,6 +9,7 @@ location: "Hotel Boston, Zaragoza"
 province: "Zaragoza"
 url: "https://www.eurostarshotels.com/exe-boston.html"
 color: "#2E8B57"
+tags: ['Juegos de mesa', 'Desarrollo']
 ---
 
 **Protos y Tipos 2025 - Encuentro Nacional de Desarrolladores de Juegos de Mesa**

@@ -6,6 +6,7 @@ end: '2025-03-08'
 location: 'Parque Infantil de Écija, Sevilla'
 province: 'Sevilla'
 color: '#4CAF50'
+tags: ['Juegos de mesa', 'Familiar']
 ---
 
 Este año vuelve el Festival de Juegos de Mesa de ÉCIJA JUEGA, en su sexta Edición. Allí, podréis disfrutar de todas las actividades que proponen y jugar a las novedades Zacatrus.
