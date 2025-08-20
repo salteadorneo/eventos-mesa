@@ -7,7 +7,7 @@ endTime: '20:00'
 location: 'Espacio Joven de Jaca, C/ Escuelas Pías, nº 5, Huesca'
 province: 'Huesca'
 color: '#795548'
-tags: ['Juegos de mesa', 'Rol', 'Gratis']
+tags: ['Juegos de mesa', 'Rol']
 ---
 
 Acude a la II Jornada de Rol y Juegos de Mesa "A Chugar", un evento gratuito que tendrá lugar de 11:00 a 20:00 h. Ve a jugar algunas de nuestras últimas novedades que serán demostradas.

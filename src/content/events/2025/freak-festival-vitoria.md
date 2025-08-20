@@ -10,7 +10,7 @@ province: "Álava"
 url: "https://freakfestival.es/"
 image: "https://eventos.salteadorneo.dev/evento/2025/freak-festival-vitoria.png"
 color: "#8A2BE2"
-tags: ['Juegos de mesa', 'Rol', 'Gratis']
+tags: ['Juegos de mesa', 'Rol']
 ---
 
 **Freak Festival 2025 - Juega, Descubre, Crea**

@@ -6,7 +6,7 @@ location: 'Leganés'
 province: 'Madrid'
 color: '#38A169'
 url: 'https://tranjisgames.com/ferias-y-eventos'
-tags: ['Juegos de mesa', 'Gratis']
+tags: ['Juegos de mesa']
 ---
 
 ## Jueganess - Jornadas de Juegos de Mesa
