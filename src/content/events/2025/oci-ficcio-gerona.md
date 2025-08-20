@@ -5,13 +5,10 @@ start: '2025-08-16'
 location: 'Gerona'
 province: 'Gerona'
 color: '#4CAF50'
+tags: ['Juegos de mesa', 'Rol']
 ---
 
 La Asociación Lúdica Oci Ficció Empordà celebra las 8ª Jornadas Lúdicas. Estas jornadas son su evento anual más importante, un punto de encuentro para toda la comunidad de la zona.
-
-**Fecha:** 16 de agosto de 2025
-**Ubicación:** Gerona
-**Organizador:** Asociación Lúdica Oci Ficció Empordà
 
 Diviértete en esta experiencia inolvidable en un ambiente cómodo con aire acondicionado y bar, durante un día lleno de actividades.
 

@@ -9,6 +9,7 @@ url: "https://bellotacon.es/"
 image: "https://eventos.salteadorneo.dev/evento/2026/bellota-con-badajoz.jpeg"
 color: "#540D0B"
 email: 'info@bellotacon.es'
+tags: ['Wargames', 'Simulación histórica']
 ---
 
 **Convención Internacional de Juegos de Simulación Histórica de Tablero**

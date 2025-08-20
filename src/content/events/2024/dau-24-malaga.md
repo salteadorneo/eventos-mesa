@@ -9,6 +9,7 @@ location: "Málaga"
 province: "Málaga"
 url: "https://docs.google.com/forms/d/e/1FAIpQLSdc9GQiiSQYrDG9-Jn03zcNsydBy2KeTMghfXqDrKvoeZbM0Q/viewform"
 color: "#FF6B35"
+tags: ['Juegos de mesa', 'Festival']
 ---
 
 **Festival del DAU - Encuentro Nacional de Juegos de Mesa**
@@ -17,8 +18,6 @@ Como cada año, el Festival del DAU es uno de los mayores encuentros a nivel nac
 
 ## Información General
 
-- **Fechas**: 16 y 17 de noviembre de 2024
-- **Horario**: De 10:00 a 20:00 horas ambos días
 - **Acceso**: No se puede aparcar dentro del recinto
 
 ## Actividades Principales
