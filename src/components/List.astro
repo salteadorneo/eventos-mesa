@@ -1,5 +1,6 @@
 ---
 import Dates from "./Dates.astro";
+import Tags from "./Tags.astro";
 
 const { events } = Astro.props;
 
@@ -96,6 +97,7 @@ events.forEach((event: any) => {
                                                 </span>
                                             </p>
                                         )}
+                                        <Tags {...event} class="mt-4 -ml-2" />
                                     </a>
                                 </li>
                             ))}

@@ -13,6 +13,7 @@ const event = defineCollection({
             location: z.string().optional(),
             province: z.string().optional(),
             color: z.string().optional(),
+            tags: z.array(z.string()).optional(),
             url: z.string().url().optional(),
             daysOfWeek: z.array(z.number()).optional(),
             startTime: z.string().optional(),
