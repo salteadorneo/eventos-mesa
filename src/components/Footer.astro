@@ -2,52 +2,116 @@
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import { slugify } from "@/utils";
+import Logo from "@/components/Logo.astro";
 
 const events = await getCollection("event");
+
 const provinces = new Set<string>();
+const tags = new Set<string>();
 events.forEach((event: CollectionEntry<"event">) => {
     if (event.data.province) {
         provinces.add(event.data.province);
     }
+    event.data.tags?.forEach((tag) => {
+        tags.add(tag);
+    });
 });
 ---
 
 <footer class="bg-primary text-white py-6">
-    <div class="w-full max-w-6xl mx-auto px-4 mb-8">
-        <p class="text-xl mb-2">Eventos por provincia</p>
-        <ul class="flex flex-wrap gap-x-5">
-            {
-                Array.from(provinces)
-                    .sort((a, b) =>
-                        a.localeCompare(b, "es", { sensitivity: "base" }),
-                    )
-                    .map((province) => (
-                        <li>
-                            <a href={`/eventos/${slugify(province)}`}>
-                                {province}
-                            </a>
-                        </li>
-                    ))
-            }
-        </ul>
-    </div>
-    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-        <a
-            href="https://github.com/salteadorneo/eventos-mesa"
-            target="_blank"
-            class="flex items-center gap-2 text-sm"
-        >
-            <svg viewBox="0 0 16 16" aria-hidden="true" width="18" height="18"
-                ><path
-                    fill="currentColor"
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                ></path>
-            </svg>
-            salteadorneo/eventos-mesa
-        </a>
-        <a href="/contacto" class="text-sm">Contacto</a>
-        <a href="mailto:eventos@salteadorneo.dev" class="text-sm">
-            eventos@salteadorneo.dev
-        </a>
-    </div>
+    <section class="md:flex w-full max-w-6xl mx-auto px-4 space-y-6">
+        <div class="flex-5/12">
+            <p class="text-xl mb-2">Eventos por provincia</p>
+            <ul class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-x-5">
+                {
+                    Array.from(provinces)
+                        .sort((a, b) =>
+                            a.localeCompare(b, "es", { sensitivity: "base" }),
+                        )
+                        .map((province) => (
+                            <li>
+                                <a
+                                    href={`/eventos/${slugify(province)}`}
+                                    class="text-sm hover:underline"
+                                >
+                                    {province}
+                                </a>
+                            </li>
+                        ))
+                }
+            </ul>
+        </div>
+        <div class="flex-5/12">
+            <p class="text-xl mb-2">Eventos por tipo</p>
+            <ul class="grid grid-cols-2 gap-x-5">
+                {
+                    Array.from(tags)
+                        .sort((a, b) =>
+                            a.localeCompare(b, "es", { sensitivity: "base" }),
+                        )
+                        .map((tag) => (
+                            <li>
+                                <a
+                                    href={`/eventos/tag/${slugify(tag)}`}
+                                    class="text-sm hover:underline"
+                                >
+                                    {tag}
+                                </a>
+                            </li>
+                        ))
+                }
+            </ul>
+        </div>
+        <div class="flex-2/12 text-right">
+            <p class="text-xl font-light mb-2">
+                AGEN<span class="font-normal">DADOS</span>
+            </p>
+            <ul class="grid grid-cols-1 gap-x-5">
+                <!-- <li>
+                    <a href="/api" class="text-sm hover:underline"
+                        >Desarrolladores</a
+                    >
+                </li> -->
+                <li>
+                    <a href="/contacto" class="text-sm hover:underline"
+                        >Contacto</a
+                    >
+                </li>
+            </ul>
+            <div class="flex items-center justify-end gap-2 mt-1">
+                <a href="mailto:eventos@salteadorneo.dev">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="26"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                        ></path><path
+                            d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                        ></path><path d="M3 7l9 6l9 -6"></path></svg
+                    >
+                </a>
+                <a
+                    href="https://github.com/salteadorneo/eventos-mesa"
+                    target="_blank"
+                >
+                    <svg
+                        viewBox="0 0 16 16"
+                        aria-hidden="true"
+                        width="20"
+                        height="20"
+                        ><path
+                            fill="currentColor"
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 </footer>
