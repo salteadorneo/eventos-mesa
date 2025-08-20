@@ -5,6 +5,7 @@ import Dates from "@/components/Dates.astro";
 import Header from "@/components/Header.astro";
 import Layout from "./Layout.astro";
 import { AddToCalendarButton } from "add-to-calendar-button-react";
+import HeaderEvent from "@/components/HeaderEvent.astro";
 
 type Props = CollectionEntry<"event">;
 
@@ -29,7 +30,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
 ---
 
 <Layout title={`${title} · Agendados`} description={description}>
-    <Header color={color} />
+    <HeaderEvent title={title} color={color} />
     <main>
         <article>
             <div
@@ -195,34 +196,6 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                             </a>
                         )
                     }
-                    <button
-                        class="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer"
-                        onclick={`navigator.share({ title: '${title}', url: window.location.href })`}
-                        onmouseover={`this.style.color='${color}'`}
-                        onmouseout={`this.style.color='inherit'`}
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                            ></path><path
-                                d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
-                            ></path><path
-                                d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
-                            ></path><path
-                                d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
-                            ></path><path d="M8.7 10.7l6.6 -3.4"></path><path
-                                d="M8.7 13.3l6.6 3.4"></path></svg
-                        >
-                        Compartir
-                    </button>
                     <!-- <button
                         class="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer"
                         onclick={`addToFavorites('${id}')`}
