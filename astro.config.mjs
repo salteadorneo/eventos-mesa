@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://eventos.salteadorneo.dev',
+  site: 'https://agendados.es',
   integrations: [mdx(), sitemap(), react()],
   vite: {
     plugins: [tailwindcss()],
