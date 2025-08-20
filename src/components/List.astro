@@ -19,8 +19,10 @@ events.forEach((event: any) => {
         {
             Array.from(months).map((month) => (
                 <li>
-                    <h2 class="text-2xl mb-4">{month}</h2>
-                    <ul class="space-y-0.5 mb-4">
+                    <h2 class="inline-block py-0.5 px-3 font-semibold text-white mb-4 bg-primary">
+                        {month}
+                    </h2>
+                    <ul class="space-y-4 mb-4">
                         {events
                             .filter(
                                 (event: any) =>
@@ -33,11 +35,11 @@ events.forEach((event: any) => {
                             )
                             .map((event: any) => (
                                 <li
-                                    class="relative p-6 bg-primary bg-center bg-cover bg-no-repeat [clip-path:polygon(0_0,_100%_0,_99%_100%,_1%_100%)]"
-                                    style={`background-color: ${event.data.color}`}
+                                    class="relative p-4 border-l-20 bg-center bg-cover bg-no-repeat"
+                                    style={`border-color: ${event.data.color}`}
                                 >
                                     {event.data.image && (
-                                        <div class="max-sm:hidden sm:absolute top-1/2 right-8 -translate-y-1/2 z-50 w-18 perspective-dramatic">
+                                        <div class="max-sm:hidden sm:absolute top-1/2 right-8 -translate-y-1/2 z-50 w-24 perspective-dramatic">
                                             <img
                                                 src={event.data.image.toString()}
                                                 alt={event.data.title}
@@ -46,27 +48,25 @@ events.forEach((event: any) => {
                                         </div>
                                     )}
                                     <a href={`/evento/${event.id}/`}>
-                                        <p
-                                            class="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
-                                            transition:name={`date-${event.id}`}
-                                        >
+                                        <p transition:name={`date-${event.id}`}>
                                             <Dates
                                                 start={event.data.start}
                                                 end={event.data.end}
                                             />
                                         </p>
                                         <h3
-                                            class="sm:pr-32 text-2xl md:text-3xl text-balance text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                                            class="sm:pr-32 text-2xl md:text-3xl font-semibold text-balance"
+                                            style={`color: ${event.data.color}`}
                                             transition:name={`title-${event.id}`}
                                         >
                                             {event.data.title}
                                         </h3>
-                                        <p class="sm:pr-32 text-white text-sm mt-2">
+                                        <p class="sm:pr-32 text-sm mt-2 line-clamp-4">
                                             {event.data.description}
                                         </p>
                                         {event.data.location && (
                                             <p
-                                                class="flex items-center gap-1 mt-2 text-white drop-shadow-[0_1px_3px_rgba(0,0,0,.1)]"
+                                                class="flex items-center gap-1 mt-2"
                                                 transition:name={`location-${event.id}`}
                                             >
                                                 <svg
