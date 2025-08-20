@@ -7,6 +7,7 @@ location: 'Girona'
 province: 'Gerona'
 color: '#4CAF50'
 url: 'https://ludivers.cat'
+tags: ['Juegos de mesa', 'Festival']
 ---
 
 Asiste a la 11ª edición del Festival Ludivers que tendrá lugar los días 3 y 4 de Mayo de 2025 en els Jardins de la Devesa de Girona.

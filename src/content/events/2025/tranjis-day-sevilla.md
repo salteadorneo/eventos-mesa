@@ -7,6 +7,7 @@ location: 'Zacatrus Sevilla - C/ Luis Montoto, 121'
 province: 'Sevilla'
 color: '#FF5722'
 url: 'https://zacatrus.es'
+tags: ['Juegos de mesa']
 ---
 
 Ven a conocer las novedades de Tranjis en la tienda de Zacatrus Sevilla.

@@ -7,6 +7,7 @@ location: "Coslada, Madrid"
 province: "Madrid"
 url: "https://www.ludoergosum.org/"
 color: "#FF8C00"
+tags: ['Juegos de mesa', 'Rol']
 ---
 
 **LES 2025 - XIII Jornadas Ludo Ergo Sum**

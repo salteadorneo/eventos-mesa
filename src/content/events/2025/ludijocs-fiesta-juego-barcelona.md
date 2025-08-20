@@ -6,6 +6,7 @@ location: 'Barcelona'
 province: 'Barcelona'
 color: '#9C27B0'
 url: 'https://ludijocs.cat'
+tags: ['Juegos de mesa', 'Familiar']
 ---
 
 La Fiesta del Juego es un evento familiar y festivo con actividades centradas en los juegos de mesa y diferentes juegos. Ese mismo día tendrá lugar también la II Ludinit, una propuesta complementaria en la que podrán inscribirse quienes quieran participar en sesiones de juego más organizadas y competitivas.

@@ -6,6 +6,7 @@ location: 'Casa del Libro - Gran Vía, Madrid'
 province: 'Madrid'
 color: '#E53E3E'
 url: 'https://tranjisgames.com/ferias-y-eventos'
+tags: ['Juegos de mesa', 'Torneos']
 ---
 
 ## Evento Virus! Marvel

@@ -5,6 +5,7 @@ start: '2025-05-30'
 location: 'Lleida'
 province: 'Lleida'
 color: '#FF9800'
+tags: ['Juegos de mesa', 'Familiar']
 ---
 
 Coincidiendo con el Día Internacional del Juego, organizamos cada año la gran fiesta del juego de la ciudad, conocida como "Lleida Juga".
