@@ -31,7 +31,7 @@ const events = await getCollection(
         data.tags.some((t) => t && Astro.params.tag.match(slugify(t))),
 );
 
-const future = events
+const futures = events
     .filter((event) => event.data.start > new Date())
     .sort((a, b) => a.data.start.getTime() - b.data.start.getTime());
 const past = events
@@ -46,11 +46,11 @@ const past = events
         <section class="w-full max-w-6xl mx-auto px-4 py-6">
             <h2 class="text-3xl mb-4">Próximos eventos de {tag}</h2>
             {
-                future.length === 0 && (
+                futures.length === 0 && (
                     <p class="text-gray-500">No hay próximos eventos.</p>
                 )
             }
-            <List events={future} />
+            <List events={futures} />
             <h2 class="text-3xl mb-4 mt-12">Eventos pasados de {tag}</h2>
             {
                 past.length === 0 && (
