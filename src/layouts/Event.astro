@@ -56,7 +56,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                 <div class="relative w-full max-w-6xl mx-auto px-4 space-y-2">
                     {
                         image && (
-                            <div class="sm:absolute top-0 mx-auto right-6 z-50 w-[40dvw] sm:w-48 perspective-dramatic max-sm:mb-6">
+                            <div class="sm:absolute top-0 mx-auto right-6 z-30 w-[40dvw] sm:w-48 perspective-dramatic max-sm:mb-6">
                                 <img
                                     src={image.toString()}
                                     alt={title}
@@ -111,15 +111,13 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <>
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                    </>
+                                    <path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"
+                                    />
+                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                                 </svg>
                                 <span class="max-sm:truncate max-sm:max-w-xs">
                                     {location}
@@ -148,16 +146,14 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <>
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path d="M9 15l6 -6" />
-                                        <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
-                                        <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
-                                    </>
+                                    <path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"
+                                    />
+                                    <path d="M9 15l6 -6" />
+                                    <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                                    <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
                                 </svg>
                                 {new URL(url).hostname.replace("www.", "")}
                             </a>
@@ -182,15 +178,13 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
                                 >
-                                    <>
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-                                        <path d="M3 7l9 6l9 -6" />
-                                    </>
+                                    <path
+                                        stroke="none"
+                                        d="M0 0h24v24H0z"
+                                        fill="none"
+                                    />
+                                    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                    <path d="M3 7l9 6l9 -6" />
                                 </svg>
                                 {email}
                             </a>
@@ -218,7 +212,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                             ></path></svg
                         >
                         Añadir a favoritos
-                    </button> -->
+                    </button>
                     <script is:inline>
                         function addToFavorites(eventId) {
                             let favorites =
@@ -238,7 +232,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                                 JSON.stringify(favorites),
                             );
                         }
-                    </script>
+                    </script> -->
                 </div>
             </div>
             <div class="w-full max-w-6xl mx-auto py-6 px-4 md:pr-56 space-y-4">
@@ -275,6 +269,21 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     />
                 )
             }
+            <div class="w-full max-w-6xl mx-auto py-6 px-4 md:pr-56 space-y-4">
+                <p class="text-sm opacity-80">
+                    Si tienes más datos sobre este evento o existe un error, por favor
+                    <a
+                        href="/contacto"
+                        class="text-primary underline hover:no-underline"
+                    >contáctanos</a>. También puedes
+                    <a
+                        href="mailto:contacto@agendados.es"
+                        class="text-primary underline hover:no-underline"
+                    >
+                        enviarnos un correo</a>
+                    {" "}si prefieres.
+                </p>
+            </div>
         </article>
     </main>
     <Footer />
