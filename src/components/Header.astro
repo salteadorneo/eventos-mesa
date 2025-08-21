@@ -9,7 +9,9 @@ const { color } = Astro.props;
     class="sticky top-0 z-40 bg-primary text-white"
     style={`background-color: ${color};`}
 >
-    <nav class="w-full max-w-6xl mx-auto p-4 flex justify-between items-center gap-4">
+    <nav
+        class="w-full max-w-6xl mx-auto p-4 flex justify-between items-center gap-4"
+    >
         <a href="/">
             <Logo />
         </a>
@@ -30,26 +32,6 @@ const { color } = Astro.props;
                     ></path></svg
                 >
                 <span class="hidden sm:inline">Inicio</span>
-            </HeaderLink>
-            <HeaderLink href="/eventos">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="hidden"
-                    ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                    ></path><path d="M9 6l11 0"></path><path d="M9 12l11 0"
-                    ></path><path d="M9 18l11 0"></path><path d="M5 6l0 .01"
-                    ></path><path d="M5 12l0 .01"></path><path d="M5 18l0 .01"
-                    ></path></svg
-                >
-                <span class="">Listado</span>
             </HeaderLink>
             <HeaderLink href="/eventos/proximos">
                 <svg
