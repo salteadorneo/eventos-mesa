@@ -1,6 +1,5 @@
 ---
-import Dates from "./Dates.astro";
-import Tags from "./Tags.astro";
+import Event from "./Event.astro";
 
 const { events } = Astro.props;
 
@@ -35,70 +34,8 @@ events.forEach((event: any) => {
                                         .toLowerCase() === month,
                             )
                             .map((event: any) => (
-                                <li
-                                    class="relative p-4 border-l-20 bg-center bg-cover bg-no-repeat"
-                                    style={`border-color: ${event.data.color}`}
-                                >
-                                    {event.data.image && (
-                                        <div class="max-sm:hidden sm:absolute top-1/2 right-8 -translate-y-1/2 z-50 w-24 perspective-dramatic">
-                                            <img
-                                                src={event.data.image.toString()}
-                                                alt={event.data.title}
-                                                class="-rotate-y-6"
-                                            />
-                                        </div>
-                                    )}
-                                    <a href={`/evento/${event.id}/`}>
-                                        <p
-                                            class="font-medium"
-                                            transition:name={`date-${event.id}`}
-                                        >
-                                            <Dates
-                                                start={event.data.start}
-                                                end={event.data.end}
-                                            />
-                                        </p>
-                                        <h3
-                                            class="sm:pr-32 text-2xl md:text-3xl font-medium text-balance"
-                                            style={`color: ${event.data.color}`}
-                                            transition:name={`title-${event.id}`}
-                                        >
-                                            {event.data.title}
-                                        </h3>
-                                        <p class="sm:pr-32 text-sm mt-2 line-clamp-4">
-                                            {event.data.description}
-                                        </p>
-                                        {event.data.location && (
-                                            <p
-                                                class="flex items-center gap-1 mt-2"
-                                                transition:name={`location-${event.id}`}
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                >
-                                                    <path
-                                                        stroke="none"
-                                                        d="M0 0h24v24H0z"
-                                                        fill="none"
-                                                    />
-                                                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                                                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                                                </svg>
-                                                <span class="truncate">
-                                                    {event.data.location}
-                                                </span>
-                                            </p>
-                                        )}
-                                        <Tags {...event} class="mt-4" />
-                                    </a>
+                                <li>
+                                    <Event {...event} />
                                 </li>
                             ))}
                     </ul>
