@@ -6,7 +6,7 @@ import Layout from "@/layouts/Layout.astro";
 import Calendar from "@/components/Calendar.astro";
 import Filter from "@/components/Filter.astro";
 import Title from "@/components/Title.astro";
-import Event from "@/components/Event.astro";
+import EventMini from "@/components/EventMini.astro";
 
 const events = await getCollection("event");
 
@@ -20,16 +20,48 @@ const futures = events
 
 <Layout>
 	<Header />
-	<main class="flex-1">
+	<main class="flex-1 mb-6">
 		<Title title="Calendario de eventos">
 			<Filter />
 		</Title>
-		<section class="w-full max-w-6xl mx-auto px-4">
-			<Calendar events={events} />
+		<section
+			class="w-full max-w-6xl mx-auto px-4 flex flex-col xl:flex-row items-start gap-8"
+		>
+			<section class="w-full xl:flex-1">
+				<Calendar events={events} />
+			</section>
+			<section class="xl:basis-1/4 pb-6 xl:py-6">
+				<h2 class="text-2xl mb-4">Próximos eventos</h2>
+				<div class="space-y-4">
+					<EventMini {...futures?.[0]} />
+					<EventMini {...futures?.[1]} />
+					<EventMini {...futures?.[2]} />
+					<EventMini {...futures?.[3]} />
+				</div>
+			</section>
 		</section>
-		<section class="w-full max-w-6xl mx-auto px-4 py-6">
-			<h2 class="text-3xl mb-4">Próximo evento</h2>
-			<Event {...futures?.[0]} />
+		<section
+			class="w-full max-w-6xl mx-auto px-4 flex flex-col xl:flex-row items-start gap-8"
+		>
+			<p>
+				¿Quieres contribuir con un evento o corregir
+				algún dato? La web es de código abierto. Entra en <a
+					href="https://github.com/salteadorneo/agendados"
+					class="text-primary underline hover:no-underline"
+					>nuestro repositorio de GitHub</a
+				> y envíanos un pull request. Si no sabes cómo hacerlo,
+				<a
+					href="/contacto"
+					class="text-primary underline hover:no-underline"
+					>contáctanos</a
+				> o escríbenos a
+				<a
+					href="mailto:contacto@agendados.es"
+					class="text-primary underline hover:no-underline"
+					>
+					contacto@agendados.es</a
+				>.
+			</p>
 		</section>
 	</main>
 </Layout>
