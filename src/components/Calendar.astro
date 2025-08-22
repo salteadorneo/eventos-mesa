@@ -1,8 +1,8 @@
 ---
-const { events } = Astro.props;
+const { events, className, date } = Astro.props;
 ---
 
-<div id="calendar" class="my-6 h-[600px] md:h-[700px]"></div>
+<div id="calendar" class={`my-6 h-[640px] md:h-[720px] ${className}`}></div>
 <style is:inline>
     .event:hover {
         opacity: 0.8;
@@ -16,9 +16,9 @@ const { events } = Astro.props;
     }
 </style>
 <script src="/lib/fullcalendar.min.js" is:inline></script>
-<script is:inline define:vars={{ events }}>
+<script is:inline define:vars={{ events, date }}>
     document.addEventListener("astro:page-load", () => {
-        const savedDate = localStorage.getItem("calendarDate");
+        const savedDate = date ?? localStorage.getItem("calendarDate");
         let initialDate = savedDate ? new Date(savedDate) : new Date();
 
         var calendarEl = document.getElementById("calendar");
