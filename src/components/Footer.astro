@@ -78,7 +78,10 @@ events.forEach((event: CollectionEntry<"event">) => {
                     </a>
                 </li>
                 <li>
-                    <a href={`/eventos/${new Date().getFullYear()}`} class="text-sm hover:underline">
+                    <a
+                        href={`/eventos/${new Date().getFullYear()}`}
+                        class="text-sm hover:underline"
+                    >
                         Eventos de {new Date().getFullYear()}
                     </a>
                 </li>
@@ -90,6 +93,16 @@ events.forEach((event: CollectionEntry<"event">) => {
                 <li>
                     <a href="/contacto" class="text-sm hover:underline">
                         Contacto
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://dashboard.simpleanalytics.com/agendados.es"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-sm hover:underline"
+                    >
+                        Estadísticas
                     </a>
                 </li>
             </ul>
