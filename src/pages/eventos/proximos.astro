@@ -14,7 +14,7 @@ const events = (await getCollection("event"))
     .sort((a, b) => a.data.start.valueOf() - b.data.start.valueOf());
 ---
 
-<Layout>
+<Layout title="Próximos eventos" description="Listado de próximos eventos de juegos de mesa.">
     <Header />
     <main class="flex-1">
         <Title title="Próximos eventos" />
