@@ -2,9 +2,11 @@
 interface Props {
     start: Date;
     end?: Date;
+    startTime?: string;
+    endTime?: string;
 }
 
-const { start, end } = Astro.props;
+const { start, end, startTime, endTime } = Astro.props;
 
 const isSameMonth = start.getMonth() === (end?.getMonth() ?? start.getMonth());
 const isSameYear =
@@ -45,6 +47,28 @@ const isSameDay = start.getDate() === (end?.getDate() ?? start.getDate());
                 year: "numeric",
             })}
         </>
+    ) : isSameYear ? (
+        <>
+            <time datetime={start.toISOString()}>
+                {start.toLocaleDateString("es-ES", {
+                    day: "numeric",
+                    month: "long",
+                })}
+            </time>
+            {end && (
+                <>
+                    {" "}
+                    -{" "}
+                    <time datetime={end.toISOString()}>
+                        {end.toLocaleDateString("es-ES", {
+                            day: "numeric",
+                            month: "long",
+                        })}
+                    </time>
+                </>
+            )}{" "}
+            de {start.getFullYear()}
+        </>
     ) : (
         <>
             <time datetime={start.toISOString()}>
@@ -69,4 +93,14 @@ const isSameDay = start.getDate() === (end?.getDate() ?? start.getDate());
             )}
         </>
     )
+}{
+    startTime || endTime ? (
+        endTime ? (
+            <>
+                de {startTime} a {endTime}
+            </>
+        ) : startTime ? (
+            <>a las {startTime}</>
+        ) : null
+    ) : null
 }

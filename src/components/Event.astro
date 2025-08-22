@@ -22,7 +22,7 @@ const { id, data } = Astro.props;
     }
     <a href={`/evento/${id}/`}>
         <p class="font-medium" transition:name={`date-${id}`}>
-            <Dates start={data.start} end={data.end} />
+            <Dates {...data} />
         </p>
         <h3
             class="sm:pr-32 text-2xl md:text-3xl font-medium text-balance"

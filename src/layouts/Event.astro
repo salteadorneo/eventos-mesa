@@ -69,7 +69,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         class="text-xl text-white"
                         transition:name={`date-${id}`}
                     >
-                        <Dates start={start} end={end} />
+                        <Dates start={start} end={end} startTime={startTime} endTime={endTime} />
                     </div>
                     <h1
                         class="sm:pr-56 text-5xl md:text-6xl text-balance text-white font-medium"
@@ -269,7 +269,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     />
                 )
             }
-            <div class="w-full max-w-6xl mx-auto py-6 px-4 md:pr-56 space-y-4">
+            <div class="w-full max-w-6xl mx-auto py-6 px-4">
                 <p class="text-sm opacity-80">
                     Si tienes más datos sobre este evento, por favor
                     <a
@@ -281,17 +281,13 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         href="mailto:contacto@agendados.es"
                         class="text-primary underline hover:no-underline"
                         >contacto@agendados.es</a
-                    >
-                    {" "}.
-                </p>
-                <p class="text-sm opacity-80">
-                    Nuestra web es de código abierto, también puedes editarlo en
+                    >. Como la web es de código abierto, podrías editarlo en
                     <a
-                        href={`https://github.com/salteadorneo/agendados/blob/main/src/content/events/2025/argalladas.md`}
+                        href={`https://github.com/salteadorneo/agendados/blob/main/src/content/events/${id}.md`}
                         class="text-primary underline hover:no-underline"
+                        target="_blank" rel="noopener noreferrer"
                         >GitHub</a
-                    >
-                    {" "}y hacer un pull request. ¡Así de fácil!
+                    >.
                 </p>
             </div>
         </article>
@@ -302,6 +298,12 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
 <style is:inline>
     .content a {
         text-decoration: underline;
+    }
+    
+    .content p,
+    .content ul,
+    .content ol {
+        margin-bottom: 1rem;
     }
 
     .content b,
