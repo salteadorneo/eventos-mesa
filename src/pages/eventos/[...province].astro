@@ -10,13 +10,60 @@ import Title from "@/components/Title.astro";
 import Calendar from "@/components/Calendar.astro";
 
 export async function getStaticPaths() {
-    const events = await getCollection("event");
-    const provinces = new Set<string>();
-    events.forEach((event: CollectionEntry<"event">) => {
-        if (event.data.province) {
-            provinces.add(event.data.province);
-        }
-    });
+    const provinces = [
+        "Álava",
+        "Albacete",
+        "Alicante",
+        "Almería",
+        "Asturias",
+        "Ávila",
+        "Badajoz",
+        "Baleares",
+        "Barcelona",
+        "Burgos",
+        "Cáceres",
+        "Cádiz",
+        "Cantabria",
+        "Castellón",
+        "Ciudad Real",
+        "Córdoba",
+        "Cuenca",
+        "Girona",
+        "Granada",
+        "Guadalajara",
+        "Guipúzcoa",
+        "Huelva",
+        "Huesca",
+        "Jaén",
+        "A Coruña",
+        "La Rioja",
+        "Las Palmas",
+        "León",
+        "Lleida",
+        "Lugo",
+        "Madrid",
+        "Málaga",
+        "Murcia",
+        "Navarra",
+        "Orense",
+        "Palencia",
+        "Pontevedra",
+        "Salamanca",
+        "Santa Cruz de Tenerife",
+        "Segovia",
+        "Sevilla",
+        "Soria",
+        "Tarragona",
+        "Teruel",
+        "Toledo",
+        "Valencia",
+        "Valladolid",
+        "Vizcaya",
+        "Zamora",
+        "Zaragoza",
+        "Ceuta",
+        "Melilla",
+    ];
     return Array.from(provinces).map((province) => ({
         params: { province: slugify(province) },
         props: { province },
@@ -39,7 +86,10 @@ const past = events
     .sort((a, b) => b.data.start.getTime() - a.data.start.getTime());
 ---
 
-<Layout title={`Eventos en ${province}`} description={`Listado de eventos de juegos de mesa en ${province}.`}>
+<Layout
+    title={`Eventos en ${province}`}
+    description={`Listado de eventos de juegos de mesa en ${province}.`}
+>
     <Header />
     <main class="flex-1">
         <Title title={`Eventos en ${province}`}>
