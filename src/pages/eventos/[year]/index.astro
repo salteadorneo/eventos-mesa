@@ -1,0 +1,58 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import List from "@/components/List.astro";
+import Filter from "@/components/Filter.astro";
+import Title from "@/components/Title.astro";
+import Calendar from "@/components/Calendar.astro";
+
+export async function getStaticPaths() {
+    const events = await getCollection("event");
+    const years = new Set<string>();
+    events.forEach((event: CollectionEntry<"event">) => {
+        const start = event.data.start;
+        const year = start.toLocaleString("es-ES", { year: "numeric" });
+        years.add(year);
+    });
+    return Array.from(years).map((year) => ({
+        params: { year },
+        props: { year },
+    }));
+}
+
+const { year } = Astro.props;
+
+const events = await getCollection(
+    "event",
+    ({ data }) => data.start.getFullYear() === parseInt(year),
+);
+---
+
+<Layout
+    title={`Eventos de ${year}`}
+    description={`Listado de eventos de juegos de mesa en ${year}.`}
+>
+    <Header />
+    <main class="flex-1">
+        <Title title={`Eventos de ${year}`}>
+            <Filter />
+        </Title>
+        <section
+            class="w-full max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-8"
+        >
+            <section class="lg:flex-1 py-6">
+                <List events={events} />
+            </section>
+            <section class="max-lg:hidden">
+                <Calendar
+                    date={new Date(`${year}-01-01`)}
+                    events={events}
+                    className="w-[400px]"
+                />
+            </section>
+        </section>
+    </main>
+    <Footer />
+</Layout>

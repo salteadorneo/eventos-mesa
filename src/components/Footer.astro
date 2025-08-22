@@ -78,6 +78,11 @@ events.forEach((event: CollectionEntry<"event">) => {
                     </a>
                 </li>
                 <li>
+                    <a href={`/eventos/${new Date().getFullYear()}`} class="text-sm hover:underline">
+                        Eventos de {new Date().getFullYear()}
+                    </a>
+                </li>
+                <li>
                     <a href="/evento/nuevo" class="text-sm hover:underline">
                         Nuevo evento
                     </a>

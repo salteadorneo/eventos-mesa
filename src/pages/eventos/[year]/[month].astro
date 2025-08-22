@@ -1,0 +1,83 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { slugify } from "@/utils";
+import List from "@/components/List.astro";
+import Filter from "@/components/Filter.astro";
+import Title from "@/components/Title.astro";
+import Calendar from "@/components/Calendar.astro";
+
+export async function getStaticPaths() {
+    const events = await getCollection("event");
+    const months = new Set<string>();
+    events.forEach((event: CollectionEntry<"event">) => {
+        const start = event.data.start;
+        const month = start.toLocaleString("es-ES", {
+            month: "long",
+            year: "numeric",
+        });
+        months.add(month);
+    });
+    return Array.from(months).map((month) => ({
+        params: {
+            year: month.split(" ")[2],
+            month: slugify(month.split(" ")[0]),
+        },
+        props: { year: month.split(" ")[2], month: month.split(" ")[0] },
+    }));
+}
+
+const { year, month } = Astro.props;
+
+const events = await getCollection(
+    "event",
+    ({ data }) =>
+        data.start.getFullYear() === parseInt(year) &&
+        data.start.toLocaleString("es-ES", { month: "long" }) === month,
+);
+
+const getNumberFromMonth = (month: string): number => {
+    const months = [
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre",
+    ];
+    return months.indexOf(month.toLowerCase()) + 1;
+};
+---
+
+<Layout
+    title={`Eventos ${month} de ${year}`}
+    description={`Listado de eventos de juegos de mesa en ${month} de ${year}.`}
+>
+    <Header />
+    <main class="flex-1">
+        <Title title={`Eventos ${month} de ${year}`}>
+            <Filter />
+        </Title>
+        <section class="w-full max-w-6xl mx-auto px-4 flex items-start gap-8">
+            <section class="flex-1 py-6">
+                <List events={events} />
+            </section>
+            <section>
+                <Calendar
+                    date={new Date(`${year}-${getNumberFromMonth(month)}-01`)}
+                    events={events}
+                    className="w-[400px]"
+                />
+            </section>
+        </section>
+    </main>
+    <Footer />
+</Layout>
