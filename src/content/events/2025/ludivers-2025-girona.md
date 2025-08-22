@@ -4,7 +4,7 @@ description: '11ª edición del Festival Ludivers en els Jardins de la Devesa de
 start: '2025-05-02'
 end: '2025-05-04'
 location: 'Els Jardins de la Devesa, Girona'
-province: 'Gerona'
+province: 'Girona'
 color: '#4CAF50'
 url: 'https://ludivers.cat'
 tags: ['Juegos de mesa', 'Festival']
