@@ -7,7 +7,7 @@ startTime: '11:00'
 endTime: '20:00'
 startRecur: '2025-07-01'
 endRecur: '2025-08-03'
-location: 'Madrid'
+location: 'Casa Encendida, Madrid'
 province: 'Madrid'
 color: '#FF5722'
 tags: ['Juegos de mesa']
@@ -15,13 +15,7 @@ tags: ['Juegos de mesa']
 
 Juegatorio es un nuevo recurso para la ciudadanía, un espacio gratuito para todas las edades dedicado a los juegos de mesa. Desde el ajedrez, al Terraforming Mars, pasando por el mus, el parchís o el Catán.
 
-**Fechas:** 1 de julio - 2 de agosto de 2025
-
-**Días:** Martes a sábado
-
 **Horario:** 11:00 a 15:00 y de 16:00 a 20:00
-
-**Ubicación:** Casa Encendida
 
 **Entrada:** Gratuita
 

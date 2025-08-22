@@ -5,7 +5,7 @@ start: "2025-11-22"
 end: "2025-11-23"
 startTime: "11:30"
 endTime: "20:00"
-location: "Frontón Amorebieta IV, Centro Zelaieta, Amorebieta-Etxano"
+location: "Frontón Amorebieta IV, Centro Zelaieta, Amorebieta-Etxano, Bizkaia"
 province: "Bizkaia"
 url: "https://amorebieta-etxano.eus/es/juventud/jokoan/"
 color: "#228B22"
@@ -18,10 +18,6 @@ Festival de juegos de mesa pensado para todas las edades, para divertirse entre 
 
 ## Información General
 
-- **Fechas**: 22 y 23 de noviembre de 2025 (estimadas)
-- **Ubicación**: Frontón Amorebieta IV (Centro Zelaieta)
-- **Dirección**: Amorebieta-Etxano, Bizkaia
-- **Horario**: 11:30-14:00 y 16:30-20:00
 - **Organización**: Ayuntamiento de Amorebieta-Etxano (Área de Juventud)
 
 ## Estructura del Evento

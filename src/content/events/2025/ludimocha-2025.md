@@ -11,14 +11,6 @@ tags: ['Juegos de mesa', 'Feria']
 
 Ludimocha 2025 es la tercera edición oficial de la feria de juegos de mesa organizada por la Asociación Cultural Eternal Lúdica, en colaboración con el Ayuntamiento de Torremocha de Jarama.
 
-**Fechas:** 31 de mayo y 1 de junio de 2025
-
-**Ubicación:** Torremocha de Jarama, Madrid
-
-**Organizador:** Asociación Cultural Eternal Lúdica
-
-**Colaboración:** Ayuntamiento de Torremocha de Jarama
-
 **Actividades disponibles:**
 - Demostraciones de juegos
 - Torneos oficiales
