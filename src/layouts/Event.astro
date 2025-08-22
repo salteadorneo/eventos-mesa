@@ -271,17 +271,27 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
             }
             <div class="w-full max-w-6xl mx-auto py-6 px-4 md:pr-56 space-y-4">
                 <p class="text-sm opacity-80">
-                    Si tienes más datos sobre este evento o existe un error, por favor
+                    Si tienes más datos sobre este evento, por favor
                     <a
                         href="/contacto"
                         class="text-primary underline hover:no-underline"
-                    >contáctanos</a>. También puedes
+                        >contáctanos</a
+                    > o escríbenos a
                     <a
                         href="mailto:contacto@agendados.es"
                         class="text-primary underline hover:no-underline"
+                        >contacto@agendados.es</a
                     >
-                        enviarnos un correo</a>
-                    {" "}si prefieres.
+                    {" "}.
+                </p>
+                <p class="text-sm opacity-80">
+                    Nuestra web es de código abierto, también puedes editarlo en
+                    <a
+                        href={`https://github.com/salteadorneo/agendados/blob/main/src/content/events/2025/argalladas.md`}
+                        class="text-primary underline hover:no-underline"
+                        >GitHub</a
+                    >
+                    {" "}y hacer un pull request. ¡Así de fácil!
                 </p>
             </div>
         </article>
