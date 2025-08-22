@@ -11,10 +11,6 @@ tags: ['Juegos de mesa', 'Demostraciones']
 
 Acude a la celebración de las jornadas de Jesta 2025. Este año son los días 7 y 8 de junio, como siempre, en Quart de Poblet, Valencia.
 
-**Fechas:** 7 y 8 de junio de 2025
-
-**Ubicación:** Quart de Poblet, Valencia
-
 Un evento que reúne a todo tipo de personas con la inquietud común de ser amantes de los juegos de mesa, para que disfruten de ellos y conozcan los nuevos títulos de las editoriales.
 
 **Características del evento:**

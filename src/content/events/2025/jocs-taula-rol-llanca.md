@@ -2,13 +2,14 @@
 title: 'Jocs de Taula | Rol'
 description: 'Evento de juegos de mesa y rol en Gimnas ins Llançà con dos sesiones durante el día.'
 start: '2025-05-31'
+startTime: '12:00'
+endTime: '20:00'
 location: 'Llançà'
 tags: ['Juegos de mesa', 'Rol']
 ---
 
 Evento de juegos de mesa y rol en Llançà con dos sesiones durante el día.
 
-**Fecha:** 31 de mayo de 2025
 **Ubicación:** Gimnas ins Llançà
 **Horarios:** 
 - 12:00 a 14:00 h

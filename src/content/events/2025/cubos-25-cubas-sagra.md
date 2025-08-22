@@ -10,8 +10,6 @@ tags: ['Juegos de mesa', 'Torneos']
 
 Asiste a la 3º jornada de Juegos de Mesa CuBoS, para todos los públicos, en Cubas de la Sagra (Madrid). Un día para descubrir y disfrutar de los juegos de mesa en familia, con amigos, en pareja o en solitario.
 
-**Fecha:** 7 de junio de 2025
-**Ubicación:** Cubas de la Sagra, Madrid
 **Público:** Todos los públicos
 
 **Modalidades de juego:**

@@ -2,14 +2,13 @@
 title: 'Gasteiz Jokoan - Primera Edición'
 description: 'Primera edición de las Jornadas de juegos de mesa de Vitoria organizadas por Board Game Gasteiz.'
 start: '2025-05-10'
+startTime: '10:30'
 location: 'Vitoria-Gasteiz'
 tags: ['Juegos de mesa', 'Demostraciones']
 ---
 
 Descubre la primera edición Jornadas de juegos de mesa de Vitoria, organizadas por la asociación Board Game Gasteiz.
 
-**Fecha:** 10 de mayo de 2025
-**Hora de apertura:** 10:30 h
 **Ubicación:** Palacio Europa (Sala Estíbaliz), Vitoria-Gasteiz
 **Organizador:** Asociación Board Game Gasteiz
 

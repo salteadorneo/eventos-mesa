@@ -19,9 +19,6 @@ El mayor festival gratuito de ocio lúdico del País Vasco te invita a disfrutar
 
 ## Información General
 
-- **Fechas**: 17-19 de octubre de 2025
-- **Ubicación**: Palacio de Congresos Europa
-- **Dirección**: Av. Gasteiz, 85, 01009 Vitoria-Gasteiz, Álava
 - **Entrada**: **COMPLETAMENTE GRATUITA**
 - **Público**: Todas las edades
 

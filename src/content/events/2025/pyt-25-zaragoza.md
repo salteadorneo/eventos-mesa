@@ -18,12 +18,10 @@ PYT 25 se celebrará el segundo fin de semana de marzo en Zaragoza, siendo el ev
 
 ## Información General
 
-- **Fechas**: 7-9 de marzo de 2025
 - **Horario**: 
   - Viernes: Apertura a las 17:00
   - Domingo: Cierre a las 16:30
   - Salas abiertas sábado y domingo desde las 10:00
-- **Ubicación**: Hotel Boston, Zaragoza
 - **Aforo máximo**: 300 personas
 - **Limpieza**: Cierre temporal entre 7:00-10:00 para limpieza del hotel
 

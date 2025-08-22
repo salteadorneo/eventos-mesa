@@ -17,10 +17,6 @@ El evento más importante de Corvus Belli llega a Vigo con 3 días de torneos, c
 
 ## Información General
 
-- **Fechas**: 18-20 de julio de 2025
-- **Ubicación**: Auditorio Pazo de Congresos Mar de Vigo
-- **Dirección**: Av. da Beiramar, 59, 36202 Vigo
-- **Organización**: Corvus Belli
 - **Edición**: Octava edición del evento
 
 ## Fechas Importantes de Inscripción

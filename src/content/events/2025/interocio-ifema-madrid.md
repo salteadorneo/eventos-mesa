@@ -3,8 +3,6 @@ title: 'InterOcio 2025 - IV Feria Internacional del Ocio y el Entretenimiento'
 description: 'La cuarta edición de la Feria Internacional del Ocio y el Entretenimiento. Un escaparate de 16.000 m² con las nuevas tendencias en juegos de mesa, rol, miniaturas, ocio digital y familiar en IFEMA Madrid.'
 start: '2025-03-28'
 end: '2025-03-30'
-startTime: '16:00'
-endTime: '21:00'
 location: 'IFEMA - Pabellón 8, Madrid'
 province: 'Madrid'
 color: '#FF4500'
@@ -21,7 +19,6 @@ La cuarta edición de la Feria Internacional del Ocio y el Entretenimiento prese
 
 ### Información General
 
-- **Fechas**: 28-30 de marzo de 2025
 - **Ubicación**: IFEMA - Pabellón 8, Madrid
 - **Superficie**: 16.000 m² de exposición
 - **Edición**: Cuarta edición del evento

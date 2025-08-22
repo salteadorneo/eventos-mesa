@@ -3,17 +3,13 @@ title: 'Megagumi de Plasencia - X Edición'
 description: 'Décima edición de las Jornadas de Juegos de Mesa y Cartas Megagumi con 30 mesas de demostración.'
 start: '2025-07-11'
 end: '2025-07-12'
-location: 'Plasencia, Cáceres'
+location: 'Casa de la Juventud (C/ Prta de Berrozana, 3), Plasencia, Cáceres'
 province: 'Cáceres'
 color: '#673AB7'
 tags: ['Juegos de mesa', 'Torneos']
 ---
 
 Apúntate a las Jornadas de Juegos de Mesa y Cartas Megagumi, que celebran su décima edición los días 11 y 12 de julio de 2025.
-
-**Fechas:** 11 y 12 de julio de 2025
-
-**Ubicación:** Casa de la Juventud (C/ Prta de Berrozana, 3), Plasencia
 
 **Organizador:** Asociación Juvenil Megagumi y Gumiparty
 

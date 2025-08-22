@@ -18,8 +18,6 @@ Las XIII Jornadas Ludo Ergo Sum son unas jornadas anuales gratuitas y solidarias
 
 ## Información General
 
-- **Fechas**: 26-28 de septiembre de 2025 (estimadas)
-- **Ubicación**: Coslada, Madrid (nueva sede desde 2024)
 - **Entrada**: **COMPLETAMENTE GRATUITA**
 - **Carácter**: Evento solidario
 - **Edición**: XIII edición

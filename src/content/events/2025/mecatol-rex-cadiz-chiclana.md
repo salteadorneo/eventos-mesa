@@ -11,12 +11,6 @@ tags: ['Juegos de mesa', 'Demostraciones']
 
 El próximo 21 y 22 de marzo de 2025 asiste a las jornadas MECATOL FEST CHICLANA -Levantera Lúdica- en el Centro Juvenil bOx con la colaboración del Ayuntamiento de Chiclana. Este evento, que será público y gratuito, tiene como objetivo principal dar a conocer esta forma de ocio en la localidad y fomentarlo entre los que ya los conocen.
 
-**Fechas:** 21 y 22 de marzo de 2025
-
-**Ubicación:** Centro Juvenil bOx, Chiclana de la Frontera (Cádiz)
-
-**Organizador:** Con colaboración del Ayuntamiento de Chiclana
-
 **Características del evento:**
 - Evento público y gratuito
 - Colaboración institucional

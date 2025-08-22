@@ -11,8 +11,6 @@ tags: ['Juegos de mesa', 'Intergeneracional']
 
 Una jornada dedicada a las personas mayores, con la intención de compartir juegos, risas y momentos entrañables.
 
-**Fecha:** 17 de mayo de 2025
-**Ubicación:** Barcelona
 **Público objetivo:** Personas mayores
 **Organizador:** LudiJocs
 

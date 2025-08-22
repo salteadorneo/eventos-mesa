@@ -20,8 +20,6 @@ El mayor evento cultural de wargames, modelismo, juegos de mesa y cosplay en Esp
 
 ## Información General
 
-- **Fechas**: 27-28 de septiembre de 2025
-- **Ubicación**: La Nave, Villaverde, Madrid
 - **Organización**: Hungry Troll
 - **Colaboración**: La Nave Madrid
 - **Aniversario**: 10ª edición del evento

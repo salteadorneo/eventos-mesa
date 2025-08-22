@@ -9,9 +9,6 @@ tags: ['Juegos de mesa', 'Temático']
 
 Mecatol Rex Cádiz organiza este fantástico evento donde se darán a conocer juegos de mesa relacionados con la temática espacial.
 
-**Fecha:** 10 de mayo de 2025
-**Ubicación:** Cádiz
-**Organizador:** Mecatol Rex Cádiz
 **Temática:** Juegos espaciales
 
 **Características del evento:**
