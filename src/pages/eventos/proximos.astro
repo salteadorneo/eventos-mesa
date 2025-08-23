@@ -5,6 +5,7 @@ import Header from "@/components/Header.astro";
 import Layout from "@/layouts/Layout.astro";
 import List from "@/components/List.astro";
 import Title from "@/components/Title.astro";
+import Calendar from "@/components/Calendar.astro";
 
 const events = (await getCollection("event"))
     .filter((event) => {
@@ -14,12 +15,22 @@ const events = (await getCollection("event"))
     .sort((a, b) => a.data.start.valueOf() - b.data.start.valueOf());
 ---
 
-<Layout title="Próximos eventos" description="Listado de próximos eventos de juegos de mesa.">
+<Layout
+    title="Próximos eventos"
+    description="Listado de próximos eventos de juegos de mesa."
+>
     <Header />
-    <main class="flex-1">
+    <main class="flex-1 mb-6">
         <Title title="Próximos eventos" />
-        <section class="w-full max-w-6xl mx-auto px-4 py-6">
-            <List events={events} />
+        <section
+            class="w-full max-w-6xl mx-auto px-4 flex flex-col lg:flex-row lg:items-start gap-8"
+        >
+            <section class="w-full max-w-6xl mx-auto px-4 py-6">
+                <List events={events} />
+            </section>
+            <section>
+                <Calendar events={events} className="lg:w-[400px] h-[500px]!" />
+            </section>
         </section>
     </main>
     <Footer />
