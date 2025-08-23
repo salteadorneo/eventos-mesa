@@ -652,9 +652,9 @@
                             font-style="normal">Álava</tspan
                         ></text
                     ></g
-                ><g id="Vizcaya_group"
+                ><g id="Bizkaia_group"
                     ><path
-                        id="Vizcaya"
+                        id="Bizkaia"
                         fill="#d1dbdd"
                         stroke="#252525"
                         stroke-width="1"
@@ -662,12 +662,12 @@
                         data-originalStrokeWidth="1"
                         style="shape-rendering: auto; stroke: rgb(37, 37, 37); filter: none;"
                     ></path><text
-                        id="Vizcaya_label"
+                        id="Bizkaia_label"
                         x="676.98"
                         y="97.86"
                         style="display: none;"
                         ><tspan
-                            id="Vizcaya_tspan"
+                            id="Bizkaia_tspan"
                             x="676.98"
                             y="97.86"
                             dy="0"
@@ -675,7 +675,7 @@
                             fill="#6a0707"
                             font-family="'Helvetica'"
                             font-weight="400"
-                            font-style="normal">Vizcaya</tspan
+                            font-style="normal">Bizkaia</tspan
                         ></text
                     ></g
                 ><g id="Lugo_group"
@@ -2076,29 +2076,30 @@
 </style>
 
 <script is:inline>
-    const groups = document.querySelectorAll(
-        "svg g[id=provinces] g[id*='group']",
-    );
-    groups.forEach((group) => {
-        group.addEventListener("click", () => {
-            const id = group.getAttribute("id");
-            if (id) {
-                window.location.href = `/eventos/${slugify(id.replace("_group", ""))}/`;
-            }
+    document.addEventListener("astro:page-load", () => {
+        const groups = document.querySelectorAll(
+            "svg g[id=provinces] g[id*='group']",
+        );
+        groups.forEach((group) => {
+            group.addEventListener("click", () => {
+                const id = group.getAttribute("id");
+                if (id) {
+                    window.location.href = `/eventos/${slugify(id.replace("_group", ""))}/`;
+                }
+            });
         });
+        const slugify = (text) => {
+            if (!text) return "";
+            return text
+                .toString() // Cast to string (optional)
+                .normalize("NFKD") // The normalize() using NFKD method returns the Unicode Normalization Form of a given string.
+                .toLowerCase() // Convert the string to lowercase letters
+                .trim() // Remove whitespace from both sides of a string (optional)
+                .replace(/\s+/g, "-") // Replace spaces with -
+                .replace(/[^\w\-]+/g, "") // Remove all non-word chars
+                .replace(/\_/g, "-") // Replace _ with -
+                .replace(/\-\-+/g, "-") // Replace multiple - with single -
+                .replace(/\-$/g, ""); // Remove trailing -
+        };
     });
-
-    const slugify = (text) => {
-        if (!text) return "";
-        return text
-            .toString() // Cast to string (optional)
-            .normalize("NFKD") // The normalize() using NFKD method returns the Unicode Normalization Form of a given string.
-            .toLowerCase() // Convert the string to lowercase letters
-            .trim() // Remove whitespace from both sides of a string (optional)
-            .replace(/\s+/g, "-") // Replace spaces with -
-            .replace(/[^\w\-]+/g, "") // Remove all non-word chars
-            .replace(/\_/g, "-") // Replace _ with -
-            .replace(/\-\-+/g, "-") // Replace multiple - with single -
-            .replace(/\-$/g, ""); // Remove trailing -
-    };
 </script>
