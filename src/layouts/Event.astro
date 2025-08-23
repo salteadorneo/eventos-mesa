@@ -29,7 +29,7 @@ const {
 const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
 ---
 
-<Layout title={`${title} · Agendados`} description={description}>
+<Layout title={title} description={description}>
     <HeaderEvent title={title} color={color} />
     <main>
         <article>
@@ -69,7 +69,12 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                         class="text-xl text-white"
                         transition:name={`date-${id}`}
                     >
-                        <Dates start={start} end={end} startTime={startTime} endTime={endTime} />
+                        <Dates
+                            start={start}
+                            end={end}
+                            startTime={startTime}
+                            endTime={endTime}
+                        />
                     </div>
                     <h1
                         class="sm:pr-56 text-5xl md:text-6xl text-balance text-white font-medium"
@@ -285,8 +290,8 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
                     <a
                         href={`https://github.com/salteadorneo/agendados/blob/main/src/content/events/${id}.md`}
                         class="text-primary underline hover:no-underline"
-                        target="_blank" rel="noopener noreferrer"
-                        >GitHub</a
+                        target="_blank"
+                        rel="noopener noreferrer">GitHub</a
                     >.
                 </p>
             </div>
@@ -299,7 +304,7 @@ const API_KEY = "AIzaSyAsvWUikM_4YkcsTWBjWMPFK6-jXe7iVAs";
     .content a {
         text-decoration: underline;
     }
-    
+
     .content p,
     .content ul,
     .content ol {
