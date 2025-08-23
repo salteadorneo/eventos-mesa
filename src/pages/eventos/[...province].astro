@@ -58,7 +58,7 @@ export async function getStaticPaths() {
         "Toledo",
         "Valencia",
         "Valladolid",
-        "Vizcaya",
+        "Bizkaia",
         "Zamora",
         "Zaragoza",
         "Ceuta",
@@ -91,11 +91,13 @@ const past = events
     description={`Listado de eventos de juegos de mesa en ${province}.`}
 >
     <Header />
-    <main class="flex-1">
+    <main class="flex-1 mb-6">
         <Title title={`Eventos en ${province}`}>
             <Filter />
         </Title>
-        <section class="w-full max-w-6xl mx-auto px-4 flex items-start gap-8">
+        <section
+            class="w-full max-w-6xl mx-auto px-4 flex flex-col lg:flex-row lg:items-start gap-8"
+        >
             <section class="flex-1 py-6">
                 <h2 class="text-3xl mb-4">
                     Próximos eventos en {province}
@@ -122,7 +124,7 @@ const past = events
                 <List events={past} />
             </section>
             <section>
-                <Calendar events={events} className="w-[400px] h-[500px]!" />
+                <Calendar events={events} className="lg:w-[400px] h-[500px]!" />
             </section>
         </section>
     </main>

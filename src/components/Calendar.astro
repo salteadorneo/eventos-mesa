@@ -25,6 +25,11 @@ const { events, className, date } = Astro.props;
         var calendar = new FullCalendar.Calendar(calendarEl, {
             firstDay: 1,
             locale: "es",
+            headerToolbar: {
+                start: "title",
+                center: "",
+                end: date ? "" : "today prev,next",
+            },
             buttonText: {
                 today: "Hoy",
                 month: "Mes",
