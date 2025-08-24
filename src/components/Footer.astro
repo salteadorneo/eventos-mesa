@@ -2,12 +2,12 @@
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import { slugify } from "@/utils";
-import Logo from "@/components/Logo.astro";
 
 const events = await getCollection("event");
 
 const provinces = new Set<string>();
 const tags = new Set<string>();
+const years = new Set<string>();
 events.forEach((event: CollectionEntry<"event">) => {
     if (event.data.province) {
         provinces.add(event.data.province);
@@ -15,14 +15,15 @@ events.forEach((event: CollectionEntry<"event">) => {
     event.data.tags?.forEach((tag) => {
         tags.add(tag);
     });
+    years.add(event.data.start.getFullYear().toString());
 });
 ---
 
 <footer class="bg-primary text-white py-6">
     <section class="md:flex w-full max-w-6xl mx-auto px-4 space-y-6">
-        <div class="flex-5/12">
+        <div class="flex-6/12">
             <p class="text-xl mb-2">Eventos por provincia</p>
-            <ul class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-x-5">
+            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-5">
                 {
                     Array.from(provinces)
                         .sort((a, b) =>
@@ -41,9 +42,9 @@ events.forEach((event: CollectionEntry<"event">) => {
                 }
             </ul>
         </div>
-        <div class="flex-5/12">
+        <div class="flex-4/12">
             <p class="text-xl mb-2">Eventos por tipo</p>
-            <ul class="grid grid-cols-2 gap-x-5">
+            <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-x-5">
                 {
                     Array.from(tags)
                         .sort((a, b) =>
@@ -62,27 +63,11 @@ events.forEach((event: CollectionEntry<"event">) => {
                 }
             </ul>
         </div>
-        <div class="flex-2/12 text-right">
+        <div class="flex-2/12 md:text-right">
             <p class="text-xl font-light mb-2">
                 AGEN<span class="font-normal">DADOS</span>
             </p>
             <ul class="grid grid-cols-1 gap-x-5">
-                <li>
-                    <a href="/api" class="text-sm hover:underline">API</a>
-                </li>
-                <li>
-                    <a href="/eventos" class="text-sm hover:underline">
-                        Todos los eventos
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href={`/eventos/${new Date().getFullYear()}`}
-                        class="text-sm hover:underline"
-                    >
-                        Eventos de {new Date().getFullYear()}
-                    </a>
-                </li>
                 <li>
                     <a href="/evento/nuevo" class="text-sm hover:underline">
                         Nuevo evento
@@ -103,8 +88,11 @@ events.forEach((event: CollectionEntry<"event">) => {
                         Estadísticas
                     </a>
                 </li>
+                <li>
+                    <a href="/api" class="text-sm hover:underline">API</a>
+                </li>
             </ul>
-            <div class="flex items-center justify-end gap-4 mt-4">
+            <div class="flex items-center md:justify-end gap-3 mt-3">
                 <a href="mailto:contacto@agendados.es">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
