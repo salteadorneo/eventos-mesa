@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "agendados": {
+      "command": "node",
+      "args": ["...\\agendados\\src\\mcp\\server.js"],
+      "env": {}
+    }
+  }
+}

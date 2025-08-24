@@ -1,0 +1,19 @@
+{
+  "name": "agendados-mcp",
+  "version": "0.1.0",
+  "description": "MCP Server para eventos de juegos de mesa",
+  "type": "module",
+  "main": "server.js",
+  "bin": {
+    "agendados-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-server.js",
+    "setup": "node setup-claude.js",
+    "setup-claude": "node setup-claude.js claude"
+  },
+  "keywords": ["mcp", "events", "board-games", "mesa"],
+  "author": "salteadorneo",
+  "license": "MIT"
+}
