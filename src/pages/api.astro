@@ -1,0 +1,176 @@
+---
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
+import Title from "@/components/Title.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout>
+    <Header />
+    <main class="flex-1">
+        <Title title="Documentación API" />
+        <div class="w-full max-w-6xl mx-auto px-4 py-6">
+            <div class="space-y-8">
+                <h2 class="text-2xl font-semibold mb-4">Endpoints</h2>
+
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="px-2 py-1 bg-primary text-white mr-3">
+                            GET
+                        </span>
+                        <h3 class="text-xl font-medium">/api/eventos</h3>
+                    </div>
+                    <p class="mb-4">
+                        Devolución de una lista de eventos con detalles básicos.
+                    </p>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Respuesta</h4>
+                        <pre
+                            class="bg-primary text-white p-4 overflow-x-auto text-xs">{`[
+    {
+        "id": "2025/event-name",
+        "data": {
+            "title": "Event name",
+            "description": "Event description",
+            "start": "2023-10-15T00:00:00.000Z",
+            "end": "2023-10-16T00:00:00.000Z",
+            "startTime": "10:00",
+            "endTime": "18:00",
+            "location": "Event location",
+            "province": "Event province",
+            "color": "blue",
+            "url": "https://event-url.com",
+            "tags": ["tag1", "tag2"],
+        }
+    },
+    ...
+]}`}</pre>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-2">Ejemplo de llamada</h4>
+                        <code
+                            class="block bg-gray-200 p-2 text-xs overflow-hidden"
+                        >
+                            fetch('<a
+                                href={`${Astro.url}/eventos`}
+                                target="_blank">{Astro.url}/eventos</a
+                            >')
+                        </code>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="px-2 py-1 bg-primary text-white mr-3">
+                            GET
+                        </span>
+                        <h3 class="text-xl font-medium">/api/evento/[id]</h3>
+                    </div>
+                    <p class="mb-4">
+                        Devolución de los detalles de un evento específico por
+                        su ID.
+                    </p>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Parámetros</h4>
+                        <table class="min-w-full border">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="border p-2 text-left">Nombre</th>
+                                    <th class="border p-2 text-left">Tipo</th>
+                                    <th class="border p-2 text-left"
+                                        >Descripción</th
+                                    >
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border p-2">id</td>
+                                    <td class="border p-2">string</td>
+                                    <td class="border p-2">
+                                        Identificador único del evento
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Respuesta</h4>
+                        <pre
+                            class="bg-primary text-white p-4 overflow-x-auto text-xs">{`{
+    "id": "2025/event-name",
+    "data": {
+        "title": "Event name",
+        "description": "Event description",
+        "start": "2023-10-15T00:00:00.000Z",
+        "end": "2023-10-16T00:00:00.000Z",
+        "startTime": "10:00",
+        "endTime": "18:00",
+        "location": "Event location",
+        "province": "Event province",
+        "color": "blue",
+        "url": "https://event-url.com",
+        "tags": ["tag1", "tag2"],
+    },
+    "body": {
+        "Event details in markdown or HTML"                      
+    },
+    ...
+}`}</pre>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-2">Ejemplo de llamada</h4>
+                        <code
+                            class="block bg-gray-200 p-2 text-xs overflow-hidden"
+                        >
+                            fetch('<a
+                                href={`${Astro.url}/evento/2025/event-name`}
+                                target="_blank"
+                                >{Astro.url}/evento/2025/event-name</a
+                            >')
+                        </code>
+                    </div>
+                </div>
+
+                <p
+                    class="bg-primary/70 text-white text-center p-4 [clip-path:polygon(1%_0,100%_0,99%_100%,0_100%)]"
+                >
+                    Nota: el API sigue en desarrollo y se agregarán más
+                    funcionalidades próximamente. Si quieres contribuir o tienes
+                    alguna duda, por favor contacta en <a
+                        href="https://github.com/salteadorneo/agendados"
+                        target="_blank"
+                        class="underline">GitHub</a
+                    >.
+                </p>
+            </div>
+
+            <!-- <div>
+                <h2 class="text-2xl font-semibold mb-4">
+                    Códigos de estado HTTP
+                </h2>
+                <p class="mb-4">
+                    La API utiliza los siguientes códigos de estado HTTP para
+                    indicar el resultado de las solicitudes:
+                </p>
+                <ul class="list-disc pl-6">
+                    <li class="mb-2">
+                        <strong>200 OK</strong> - La solicitud fue exitosa
+                    </li>
+                    <li class="mb-2">
+                        <strong>404 Not Found</strong> - El recurso no fue encontrado
+                    </li>
+                    <li class="mb-2">
+                        <strong>500 Internal Server Error</strong> - Error en el
+                        servidor
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </main>
+    <Footer />
+</Layout>
