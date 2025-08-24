@@ -26,12 +26,12 @@ const futures = events
 			<Filter />
 		</Title>
 		<section
-			class="w-full max-w-6xl mx-auto px-4 flex flex-col xl:flex-row items-start gap-8"
+			class="w-full max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-8"
 		>
-			<section class="w-full xl:flex-1 py-6">
+			<section class="w-full lg:flex-1 py-6">
 				<Calendar events={events} />
 			</section>
-			<section class="xl:basis-1/4 pb-6 xl:py-6">
+			<section class="lg:basis-1/4 pb-6 lg:py-6">
 				<h2 class="text-2xl mb-4">Próximos eventos</h2>
 				<div class="space-y-4">
 					<EventMini {...futures?.[0]} />
